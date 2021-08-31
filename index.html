@@ -15,26 +15,25 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script>
-        $(document).ready(function(){
-            $(window).scroll(function(){
-                if($(this).scrollTop()>=150 )
-                {
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                if ($(this).scrollTop() >= 150) {
                     $('#header').css(
-                       {
-                        "position":"fixed",
-                           "opacity": 0.8,
-                           "top":0,
-                           "z-index":999999
-                       }
+                        {
+                            "position": "fixed",
+                            "opacity": 0.8,
+                            "top": 0,
+                            "z-index": 999999
+                        }
                     );
                 }
-                else{
+                else {
                     $('#header').css(
-                       {
-                           "position":"relative",
-                           "opacity": 1,
-                           "z-index":99999
-                       }
+                        {
+                            "position": "relative",
+                            "opacity": 1,
+                            "z-index": 99999
+                        }
                     );
 
                 }
@@ -49,9 +48,9 @@
     <div class="main">
         <div class="info-left">
             <i class="fas fa-phone"></i>
-            <a href="tel:0372311677">0372311677</a>
+            <a href="tel:076 922 0162">076 922 0162</a>
             <i class="fas fa-envelope"></i>
-            <a href="mailto:vothanhtinh147@gmail.com">vothanhtinh147@gmail.com</a>
+            <a href="mailto:demonhunterg@gmail.com"></a>demonhunterg@gmail.com</a>
         </div>
         <div class="info-right">
             <a href="#"><i class="fab fa-facebook-square"></i></a>
@@ -61,36 +60,38 @@
         </div>
     </div>
     <div id="header">
-        <!-- begin-nav -->
+        
         <div class="img_logo">
             <a href="#"><img src="./assets/img/logo.png" alt="logo"></a>
         </div>
-        <ul id="nav">
-            <li><a href="#">Trang Chủ</a></li>
-            <li><a href="#">Giới Thiệu</a></li>
-            <li><a href="#">Phòng</a></li>
-            <li><a href="#">Tin Tức</a></li>
-            <li><a href="#"> Liên Hệ</a></li>
-        </ul>
-        <div class="search">
-            <a href="#"><i class="fas fa-search"></i></a>
-        </div>
-        <a href="#">
-            <button class="btnroom">
-              <span>Đặt Phòng</span>
+        <div class="header-right">
+            <ul id="nav">
+                <li><a href="#">Trang Chủ</a></li>
+                <li><a href="#">Giới Thiệu</a></li>
+                <li><a href="#">Phòng</a></li>
+                <li><a href="#">Tin Tức</a></li>
+                <li><a href="#"> Liên Hệ</a></li>
+            </ul>
+            <div class="search">
+                <i class="search-header fas fa-search">
+                    <div id="input-search">
+                        <input class="timkiem"  type="text" placeholder="tìm kiếm....." >
+                        <i class="fas fa-search"></i>
+                    </div>
+                </i>
+            </div>
+    
+            <button type="button" class="btn ">
+                <a href="#"> <span>ĐẶT PHÒNG</span> </a>
             </button>
-          </a>
-        <!-- end-nav -->
+        </div>
     </div>
     <div id="myCarousel" class="carousel slide " data-ride="carousel">
-        <!-- Indicators -->
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
             <li data-target="#myCarousel" data-slide-to="1"></li>
             <li data-target="#myCarousel" data-slide-to="2"></li>
         </ol>
-
-        <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div class="item active">
                 <img src="./assets/img/slide-1.jpg" alt="Los Angeles">
@@ -110,105 +111,307 @@
             </div>
         </div>
 
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-        </a>
     </div>
-    <div class="content-item-1">
-        <div class="text-1">
-            <h1 class="colorgold">
-                DỊCH VỤ
-            </h1>
-            <h1>
-                HẤP DẪN
-            </h1>
-            <div class="subtext">
-                <p>Đến với Khu nghỉ dưỡng Premier Village Mona Media, quý khách sẽ được trải nghiệm dịch vụ Spa cao cấp,
-                    trung <br>tâm thể hình hiện đại và các hoạt động giải trí trên biển</p>
-            </div>
+    <form action="/action_page.php" class=" animate__animated animate__bounceInRight">
+        <h1 class="title-form">Đặt phòng</h1>
+        <div class="form-group">
+            <label for="pwd">Họ & Tên</label>
+            <input type="text" placeholder="  __">
         </div>
-        <div class="items  animate__animated animate__backInDown">
-            <div class="item-1">
-                <img src="./assets/img/content-1.jpg" alt="content-1">
-                <p>Nhà hàng</p>
-            </div>
-            <div class="item-1 ">
-                <img src="./assets/img/content-2.jpg" alt="content-1">
-                <p>Spa & Massage</p>
-            </div>
-            <div class="item-1">
-                <img src="./assets/img/content-3.jpg" alt="content-1">
-                <p>Dù lượn</p>
-            </div>
+        <div class="form-group">
+            <label for="pwd">Số điện thoại</label>
+            <input type="text" placeholder="  __">
         </div>
-        <div class="clear"></div>
-    </div>
-
-    <section>
-        <div class="content-item-2">
-            <div class="text-2">
+        <div class="form-group">
+            <label for="pwd">Ngày nhận</label>
+            <input type="date" placeholder="  dd/mm/yyyy">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Ngày trả</label>
+            <input type="date" placeholder="  dd/mm/yyyy">
+        </div>
+        <div class="form-group">
+            <label for="pwd">Số người</label>
+            <input type="text" placeholder="  __">
+        </div>
+        <button type="button" class="btn btn-dark"><a href="#">Gửi</a> </button>
+    </form>
+    <div class="content">
+        <div class="content-item-1">
+            <div class="text-1">
                 <h1 class="colorgold">
-                    PHÒNG NGHỈ
+                    DỊCH VỤ
                 </h1>
                 <h1>
-                    HIỆN ĐẠI
+                    HẤP DẪN
                 </h1>
                 <div class="subtext">
-                    <p>Chọn phòng phù hợp với bạn</p>
+                    <p>Đến với Khu nghỉ dưỡng Premier Village Mona Media, quý khách sẽ được trải nghiệm dịch vụ Spa cao
+                        cấp,
+                        trung <br>tâm thể hình hiện đại và các hoạt động giải trí trên biển</p>
                 </div>
             </div>
-            <div class="items">
-                <div class="rooms">
-                    <div>
-                        <img src="./assets/img/roomsilver.jpg" alt="roomsilver">
+            <div class="items ">
+                <div class="item-1">
+                    <div class="item-img">
+                        <img src="./assets/img/content-1.jpg" alt="content-1">
                     </div>
 
-                    <h2>SILVER ROOM</h2>
-                    <div class="room">
-                        <h3>Giá:<b>50$</b>/1 đêm</h3>
-                        <a href="" class="btn full-right">Xem Chi Tiết</a>
-                    </div>
+                    <p>Nhà hàng</p>
                 </div>
-                <div class="rooms">
-                    <div>
-                        <img src="./assets/img/roomplatinum.jpg" alt="roomplatinum">
+                <div class="item-1 ">
+                    <div class="item-img">
+                        <img src="./assets/img/content-2.jpg" alt="content-1">
                     </div>
-
-                    <h2>PLATINUM ROOM</h2>
-                    <div class="room">
-                        <h3>Giá:<b>80$</b>/1 đêm</h3>
-                        <a href="" class="btn full-right">Xem Chi Tiết</a>
-                    </div>
+                    <p>Spa & Massage</p>
                 </div>
-                <div class="rooms">
-                    <div>
-                        <img src="./assets/img/roombronze.jpg" alt="roombronze">
+                <div class="item-1">
+                    <div class="item-img">
+                        <img src="./assets/img/content-3.jpg" alt="content-1">
                     </div>
-
-                    <h2>BRONZE ROOM</h2>
-                    <div class="room">
-                        <h3>Giá:<b>40$</b>/1 đêm</h3>
-                        <a href="" class="btn full-right">Xem Chi Tiết</a>
-                    </div>
-
+                    <p>Dù lượn</p>
                 </div>
             </div>
-
+            <div class="clear"></div>
         </div>
-    </section>
+
+        <section>
+            <div class="content-item-2">
+                <div class="text-2">
+                    <h1 class="colorgold">
+                        PHÒNG NGHỈ
+                    </h1>
+                    <h1>
+                        HIỆN ĐẠI
+                    </h1>
+                    <div class="subtext">
+                        <p>Chọn phòng phù hợp với bạn</p>
+                    </div>
+
+                </div>
+                <div class="items">
+                    <div class="rooms">
+                        <div>
+                            <img src="./assets/img/roomsilver.jpg" alt="roomsilver">
+                        </div>
+
+                        <h2>SILVER ROOM</h2>
+                        <div class="room">
+                            <h3>Giá:<b>50$</b>/1 đêm</h3>
+                            <a href="" class="btn full-right">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="rooms">
+                        <div>
+                            <img src="./assets/img/roomplatinum.jpg" alt="roomplatinum">
+                        </div>
+
+                        <h2>PLATINUM ROOM</h2>
+                        <div class="room">
+                            <h3>Giá:<b>80$</b>/1 đêm</h3>
+                            <a href="" class="btn full-right">Xem Chi Tiết</a>
+                        </div>
+                    </div>
+                    <div class="rooms">
+                        <div>
+                            <img src="./assets/img/roombronze.jpg" alt="roombronze">
+                        </div>
+
+                        <h2>BRONZE ROOM</h2>
+                        <div class="room">
+                            <h3>Giá:<b>40$</b>/1 đêm</h3>
+                            <a href="" class="btn full-right">Xem Chi Tiết</a>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <section>
+            <div class="content-item-3">
+                <div class="img"></div>
+                <div class="text-background">
+                    <h2>THIÊN ĐƯỜNG NGHỈ DƯỠNG</h2>
+                    <p>Quý khách sẽ được ngắm ánh bình minh và chiều hoàng hôn trên bãi biển của khu nghỉ dưỡng, và tận
+                        hưởng<br> những tiện nghi sang trọng bậc nhất tại đây. Đến với Khu nghỉ dưỡng Premier Village Đà
+                        Nẵng, quý khách sẽ được <br>trải nghiệm dịch vụ Spa cao cấp, trung tâm thể hình hiện đại và các
+                        hoạt
+                        động giải trí trên biển.</p>
+                </div>
+            </div>
+            <div class="counter-content">
+                <div class="counter-item">
+                    <div class="counter">600</div>
+                    <h3>Khách mời</h3>
+                </div>
+                <div class="counter-item">
+                    <span class="counter">1200</span>
+                    <h3>Khách quốc tế </h3>
+                </div>
+                <div class="counter-item">
+                    <span class="counter">1500</span>
+                    <h3>Khách đánh giá 5 sao</h3>
+                </div>
+                <div class="counter-item">
+                    <span class="counter">150</span>
+                    <h3>Nhân viên phục vụ</h3>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <section>
-        <div class="content-item-3">
+        <div class="new-left">
+            <h3>
+                <span style="color: gold;">TIN TỨC</span>
+                MỚI NHẤT
+            </h3>
+            <div class="new-item">
+                <div class="sub">
+                    <div class="sub-img">
+                        <img src="./assets/img/vungtau.jpg" alt="vungtau">
+                    </div>
+                    <h5 class="">Thành phố biển Vũng Tàu</h5>
+                    <p class="text-day">8 Tháng Ba, 2021</p>
+                    <div class="hollow"></div>
+                    <p>Những sắc màu của biển, của di tích, của lịch sử… pha trộn vào nhau... </p>
+                    <button type="button" class="btn ">ĐỌC THÊM</button>
+                </div>
+                <div class="sub">
+                    <div class="sub-img">
+                        <img src="./assets/img/phu-quoc.jpg" alt="vungtau">
+                    </div>
+                    <h5 class="">Đảo ngọc Phú Quốc</h5>
+                    <p class="text-day">8 Tháng Ba, 2021</p>
+                    <div class="hollow"></div>
+                    <p>Phú Quốc có nhiều bãi tắm đẹp với phong cảnh hoang sơ, trong lành thu ... </p>
+                    <button type="button" class="btn ">ĐỌC THÊM</button>
+                </div>
+                <div class="new-right">
+                    <h3>
+                        <span style="color: gold;">SỰ Kiện</span>
+                        NỔI BẬT
+                    </h3>
+                    <div class="event">
+                        <div class="event-list">
+                            <img src="./assets/img/nhatrang.jpeg" alt="nhatrang">
+
+                        </div>
+                        <h5> <a href="#">Đến Vinpearl Nha Trang, nhận ưu đãi lớn với Vincharm Spa</a> </h5>
+                    </div>
+                    <div class="event">
+                        <div class="event-list">
+                            <img src="./assets/img/dulich.jpg" alt="nhatrang">
+                        </div>
+                        <h5> <a href="#">Giới thiệu Khu du lịch sinh thái suối nước khoáng nóng Tiên Lãng</a> </h5>
+                    </div>
+                    <div class="event">
+                        <div class="event-list">
+                            <img src="./assets/img/stay.jpg" alt="nhatrang">
+                        </div>
+                        <h5> <a href="#">Gói dịch vụ Stay &amp; Play: Chơi golf và nghỉ dưỡng tại khách sạn Vinpearl
+                                Resort
+                                Nha Trang</a> </h5>
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
-    </section>
 
+    </section> 
+    
 
 </body>
+<!-- <footer id="footer">
+    <div class="footer-item">
+        <div class="footer-item-list">
+            <img src="./assets/img/logo_footer.png"   class="logo-footer">
+            <p>Đến với Khu nghỉ dưỡng Premier Village Mona Media, quý khách sẽ được trải nghiệm dịch vụ Spa
+                cao
+                cấp, trung tâm thể hình hiện đại và các hoạt động giải trí trên biển</p>
+            <div class="icon-logo-footer">
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-twitter"></i>
+            </div>
+        </div>
+        <div class="footer-item-list">
+            <div id="contact">
+                <div id="contact-child">
+                    <h5>liên hệ</h5>
+                    <div class="hollow"></div>
+                    <div id="address">
+                        <i class="fas fa-map-marker-alt"></i>
+
+                        <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+
+                    </div>
+                    <div class="contact-child-items">
+                        <i class="fas fa-tty"></i>
+                        <a href="tel:0769220162">076 922 0162</a>
+                    </div>
+                    <div id="email">
+                        <i class="fas fa-envelope"></i>
+                        <p>
+                            <a href="mailto:demonhunterg@gmail.com">demonhunterg@gmail.com</a>
+                            <br>
+                            <a href="mailto:mon@mona.media">mon@mona.media</a>
+                        </p>
+                    </div>
+                    <div class="contact-child-items">
+                        <i class="fab fa-skype"></i>
+                        <div>
+                            <a href="skype:demonhunterp?chat">demonhunterp</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-item-list">
+            <div id="link">
+                <div id="link-child">
+                    <h5>liên kết</h5>
+                    <div class="hollow"></div>
+                    <ul>
+                        <li class="text-homepage">Trang chủ</li>
+                        <li>Giới thiệu</li>
+                        <li>Cửa hàng</li>
+                        <li>Tin tức</li>
+                        <li>Liên hệ</li>
+                    </ul>
+                    <button class="btn btn-warning">Đặt phòng</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer-item-list">
+            <div class="img">
+                <div class="img-child">
+                    <h5>hình ảnh</h5>
+                    <div class="hollow"></div>
+                    <div class="img-footer">
+                        <div>
+                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room1-1.jpg">
+                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room2-1.jpg">
+                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room3-1.jpg">
+                        </div>
+                        <div class="img-footer-child">
+                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room.jpg">
+                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room1-1-1.jpg">
+                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room1-2.jpg">
+                        </div>
+                    </div>
+        
+                </div>
+        
+            </div>
+        </div>
+    </div>
+
+</footer> -->
+
 
 </html>
