@@ -471,7 +471,6 @@ div.room button {
 }
 
 .content-item-3>.img {
-    position: relative;
     background-image: url("http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/video-bg.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -530,6 +529,7 @@ div.room button {
     display: flex;
     flex: 1;
     height: 500px;
+    margin-left: 30px;
 }
 
 div.sub {
@@ -579,7 +579,7 @@ div.sub button {
 
 .new-left h3 {
     margin-top: 0;
-    margin-left: 10px;
+    margin-left: 35px;
     padding-bottom: 10px;
     font-weight: 700;
     text-transform: uppercase;
@@ -639,6 +639,7 @@ div.sub button {
     margin-top: -125px;
     margin-bottom: 30px;
     padding-bottom: 10px;
+    margin-left: 0px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -695,7 +696,8 @@ div.sub button {
 }
 
 .footer-item-list {
-    width: 23%;
+    width: 24%;
+    margin-left: 30px;
 }
 
 .footer-item-list>.logo-footer {
