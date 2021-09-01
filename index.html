@@ -60,7 +60,7 @@
         </div>
     </div>
     <div id="header">
-        
+
         <div class="img_logo">
             <a href="#"><img src="./assets/img/logo.png" alt="logo"></a>
         </div>
@@ -75,12 +75,12 @@
             <div class="search">
                 <i class="search-header fas fa-search">
                     <div id="input-search">
-                        <input class="timkiem"  type="text" placeholder="tìm kiếm....." >
+                        <input class="timkiem" type="text" placeholder="tìm kiếm.....">
                         <i class="fas fa-search"></i>
                     </div>
                 </i>
             </div>
-    
+
             <button type="button" class="btn ">
                 <a href="#"> <span>ĐẶT PHÒNG</span> </a>
             </button>
@@ -115,26 +115,26 @@
     <form action="/action_page.php" class=" animate__animated animate__bounceInRight">
         <h1 class="title-form">Đặt phòng</h1>
         <div class="form-group">
-            <label for="pwd">Họ & Tên</label>
+            <label for="pwd" class="name">Họ & Tên</label>
             <input type="text" placeholder="  __">
         </div>
         <div class="form-group">
-            <label for="pwd">Số điện thoại</label>
+            <label for="pwd" class="name">Số điện thoại</label>
             <input type="text" placeholder="  __">
         </div>
         <div class="form-group">
-            <label for="pwd">Ngày nhận</label>
+            <label for="pwd" class="name">Ngày nhận</label>
             <input type="date" placeholder="  dd/mm/yyyy">
         </div>
         <div class="form-group">
-            <label for="pwd">Ngày trả</label>
+            <label for="pwd" class="name">Ngày trả</label>
             <input type="date" placeholder="  dd/mm/yyyy">
         </div>
         <div class="form-group">
-            <label for="pwd">Số người</label>
+            <label for="pwd" class="name">Số người</label>
             <input type="text" placeholder="  __">
         </div>
-        <button type="button" class="btn btn-dark"><a href="#">Gửi</a> </button>
+        <button type="button" class="btn " style="background-color: #000;"><a href="#">Gửi</a> </button>
     </form>
     <div class="content">
         <div class="content-item-1">
@@ -178,15 +178,17 @@
         <section>
             <div class="content-item-2">
                 <div class="text-2">
-                    <h1 class="colorgold">
-                        PHÒNG NGHỈ
-                    </h1>
-                    <h1>
-                        HIỆN ĐẠI
-                    </h1>
-                    <div class="subtext">
-                        <p>Chọn phòng phù hợp với bạn</p>
+                    <div class="text-2-item">
+                        <h2><span style="color: gold;">PHÒNG NGHỈ</span>
+                            HIỆN ĐẠI</h2>
+                        <div class="subtext">
+                            <p>Chọn phòng phù hợp với bạn</p>
+                        </div>
                     </div>
+
+                    <button type="button" class="btn">
+                        <a href="#"> <span>Xem Tất Cả</span> </a>
+                    </button>
 
                 </div>
                 <div class="items">
@@ -196,9 +198,12 @@
                         </div>
 
                         <h2>SILVER ROOM</h2>
+                        <div class="hollow"></div>
                         <div class="room">
                             <h3>Giá:<b>50$</b>/1 đêm</h3>
-                            <a href="" class="btn full-right">Xem Chi Tiết</a>
+                            <button type="button" class="btn">
+                                <a href="#"> <span>Xem Chi Tiết</span> </a>
+                            </button>
                         </div>
                     </div>
                     <div class="rooms">
@@ -207,9 +212,12 @@
                         </div>
 
                         <h2>PLATINUM ROOM</h2>
+                        <div class="hollow"></div>
                         <div class="room">
                             <h3>Giá:<b>80$</b>/1 đêm</h3>
-                            <a href="" class="btn full-right">Xem Chi Tiết</a>
+                            <button type="button" class="btn">
+                                <a href="#"> <span>Xem Chi Tiết</span> </a>
+                            </button>
                         </div>
                     </div>
                     <div class="rooms">
@@ -218,9 +226,12 @@
                         </div>
 
                         <h2>BRONZE ROOM</h2>
+                        <div class="hollow"></div>
                         <div class="room">
                             <h3>Giá:<b>40$</b>/1 đêm</h3>
-                            <a href="" class="btn full-right">Xem Chi Tiết</a>
+                            <button type="button" class="btn">
+                                <a href="#"> <span>Xem Chi Tiết</span> </a>
+                            </button>
                         </div>
 
                     </div>
@@ -321,11 +332,11 @@
 
         </div>
 
-    </section> 
-    
+    </section>
+
 
 </body>
-<!-- <footer id="footer">
+ <footer id="footer">
     <div class="footer-item">
         <div class="footer-item-list">
             <img src="./assets/img/logo_footer.png"   class="logo-footer">
@@ -377,11 +388,11 @@
                     <h5>liên kết</h5>
                     <div class="hollow"></div>
                     <ul>
-                        <li class="text-homepage">Trang chủ</li>
-                        <li>Giới thiệu</li>
-                        <li>Cửa hàng</li>
-                        <li>Tin tức</li>
-                        <li>Liên hệ</li>
+                        <li><a href="#">Trang chủ</a> </li>
+                        <li><a href="#">Giới Thiệu</a></li>
+                         <li><a href="#">Phòng</a></li>
+                         <li><a href="#">Tin Tức</a></li>
+                          <li><a href="#"> Liên Hệ</a></li>
                     </ul>
                     <button class="btn btn-warning">Đặt phòng</button>
                 </div>
@@ -393,15 +404,15 @@
                     <h5>hình ảnh</h5>
                     <div class="hollow"></div>
                     <div class="img-footer">
-                        <div>
-                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room1-1.jpg">
-                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room2-1.jpg">
-                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room3-1.jpg">
+                        <div class="img-footer-child" >
+                           <a href="#"> <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room1-1.jpg"></a>
+                            <a href="#"><img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room2-1.jpg"></a>
+                            <a href="#"><img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room3-1.jpg"></a>
                         </div>
                         <div class="img-footer-child">
-                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room.jpg">
-                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room1-1-1.jpg">
-                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room1-2.jpg">
+                            <a href="#"><img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room.jpg"></a>
+                            <a href="#"><img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room1-1-1.jpg"></a>
+                            <a href="#"><img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/room1-2.jpg"></a>
                         </div>
                     </div>
         
@@ -410,8 +421,15 @@
             </div>
         </div>
     </div>
+    <div class="banquyen">
+        <div class="banquyen-child">
+            © Bản quyền thuộc về . Thiết kế website
+            <img src="http://mona-media.com/logo.png" alt="MonaMedia">
+            <a href=" #" title="Mona Media"><strong>Mona Media</strong></a>
+        </div>
+    </div>
 
-</footer> -->
+</footer> 
 
 
 </html>
