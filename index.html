@@ -134,7 +134,7 @@
             <label for="pwd" class="name">Số người</label>
             <input type="text" placeholder="  __">
         </div>
-        <button type="button" class="btn " style="background-color: #000;"><a href="#">Gửi</a> </button>
+        <button type="button" class="btn" style="background-color: #000; text-align: center;"><a href="#">Gửi</a> </button>
     </form>
     <div class="content">
         <div class="content-item-1">
@@ -187,7 +187,7 @@
                     </div>
 
                     <button type="button" class="btn">
-                        <a href="#"> <span>Xem Tất Cả</span> </a>
+                        <a href="#"> Xem Tất Cả </a>
                     </button>
 
                 </div>
@@ -202,7 +202,7 @@
                         <div class="room">
                             <h3>Giá:<b>50$</b>/1 đêm</h3>
                             <button type="button" class="btn">
-                                <a href="#"> <span>Xem Chi Tiết</span> </a>
+                                <a href="#"> Xem Chi Tiết </a>
                             </button>
                         </div>
                     </div>
@@ -216,7 +216,7 @@
                         <div class="room">
                             <h3>Giá:<b>80$</b>/1 đêm</h3>
                             <button type="button" class="btn">
-                                <a href="#"> <span>Xem Chi Tiết</span> </a>
+                                <a href="#">Xem Chi Tiết</span> </a>
                             </button>
                         </div>
                     </div>
@@ -334,9 +334,22 @@
 
     </section>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+       <script>
+           $('.counter').counterUp({
+               delay: 10,
+               time: 1000,
+               offset: 70,
+               beginAt: 100,
+               formatter: function (n) {
+                return n.replace(/,/g, '.');
+               }
+           });
+       </script>
 </body>
- <footer id="footer">
+ <div id="footer">
     <div class="footer-item">
         <div class="footer-item-list">
             <img src="./assets/img/logo_footer.png"   class="logo-footer">
@@ -429,7 +442,7 @@
         </div>
     </div>
 
-</footer> 
+</div> 
 
 
 </html>

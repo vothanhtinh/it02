@@ -205,13 +205,14 @@ div.search:hover #input-search {
     content: "";
     display: block;
     position: absolute;
-    left: 32%;
+    left: 36.6%;
     width: 0;
     height: 0;
     border-style: solid;
 }
 
 #input-search:after {
+    left: 82px;
     top: -20px;
     border-color: transparent transparent white;
     border-width: 10px;
@@ -235,8 +236,7 @@ div.search:hover #input-search {
     width: 225px;
     height: 80px;
     border-radius: 5px;
-    padding: 0;
-    color: #fff;
+    background-color: #fff;
     border: 1px solid #a3a1a1;
 }
 
@@ -257,28 +257,29 @@ div.search:hover #input-search {
 }
 
 #input-search input {
+    width: 100%;
+    font-size: 12px;
     width: 194px;
     height: 37px;
     border: 1px solid #c0bebe;
+   
 }
 
 form {
-    top: 200px;
-    bottom: 46px;
+    top: 150px;
     background-color: rgb(255, 182, 6);
     width: 401px;
     height: 100%;
     padding: 20px 20px 10px 20px;
-    text-align: center;
     right: 70px;
     position: absolute;
     overflow: visible;
     border-radius: 20px;
     transition: transform 5s;
+   
 }
 
 .form-group>.name {
-    margin-left: -135px;
     color: #fff;
 }
 
@@ -298,6 +299,7 @@ form a {
 .form-group {
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 input {
@@ -305,10 +307,14 @@ input {
     height: 39px;
     background: none;
     width: 100%;
+    padding-left: 5px;
+    outline: none;
+    color: #000;
 }
 
 ::placeholder {
-    color: #fff !important;
+    color: #a3a1a1 !important;
+    padding-left: 8px;
 }
 
 label {
@@ -358,12 +364,12 @@ div.subtext {
 div.items {
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    flex:1;
+    padding: 50px 65px 65px 70px;
 }
 
 div.item-1 {
-    width: 30%;
-    margin: 0.5%;
+    margin: 1%;
     position: relative;
 }
 
@@ -397,16 +403,15 @@ div.item-1 img:hover {
 .content-item-2 .text-2 {
     display: flex;
     justify-content: space-between;
-    margin-left: 25px;
+    margin-left: 80px;
 }
 
 .content-item-2 .text-2 button {
     background-color: #ffb606;
-    margin-right: 25px;
+    margin-right: 80px;
 }
 
 div.rooms {
-    width: 30%;
     margin: 1%;
     background-color: #fff;
 }
@@ -523,11 +528,11 @@ div.room button {
 
 .new-item {
     display: flex;
+    flex: 1;
     height: 500px;
 }
 
 div.sub {
-    width: 100%;
     margin: 1%;
     height: 400px;
 }
@@ -626,7 +631,8 @@ div.sub button {
     position: relative;
     background-color: beige;
     margin-left: 5px;
-    height: 400px;
+    height: 393px;
+    width: 400px;
 }
 
 .new-right h3 {
@@ -639,10 +645,8 @@ div.sub button {
 
 .event {
     display: flex;
-    position: relative;
     background-color: beige;
-    padding: 10px 40px;
-    margin-right: 30px;
+    padding: 0px 40px;
 }
 
 .event h5 {
