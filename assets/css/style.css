@@ -529,7 +529,7 @@ div.room button {
     display: flex;
     flex: 1;
     height: 500px;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 div.sub {
@@ -579,7 +579,7 @@ div.sub button {
 
 .new-left h3 {
     margin-top: 0;
-    margin-left: 35px;
+    margin-left: 45px;
     padding-bottom: 10px;
     font-weight: 700;
     text-transform: uppercase;
