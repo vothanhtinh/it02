@@ -364,17 +364,22 @@ div.subtext {
 div.items {
     width: 100%;
     display: flex;
-    flex:1;
-    padding: 50px 65px 65px 70px;
 }
 
 div.item-1 {
-    margin: 1%;
     position: relative;
+    flex:1;
+    height: 320px;
+    margin: 50px 15px;
+}
+div.item-1:first-child{
+    margin-left: 65px;
+}
+div.item-1:last-child{
+    margin-right: 65px;
 }
 
 div.item-1 img {
-    max-width: 100%;
     width: 100%;
     margin: 0 auto;
 }
@@ -421,8 +426,15 @@ div.item-1 img:hover {
 }
 
 div.rooms {
-    margin: 1%;
+    flex: 1;
     background-color: #fff;
+    margin: 50px 15px;
+}
+div.rooms:first-child{
+    margin-left: 65px;
+}
+div.rooms:last-child{
+    margin-right: 65px;
 }
 
 div.rooms .hollow {
@@ -536,19 +548,21 @@ div.room button {
 
 .new-item {
     display: flex;
-    flex: 1;
     height: 500px;
-    margin-left: 40px;
 }
 
 div.sub {
-    margin: 1%;
+    flex: 1;
     height: 400px;
+    margin: 50px 15px;
+}
+div.sub:first-child{
+    margin-left: 65px;
 }
 
 div.sub>.sub-img img {
     height: 200px;
-    width: 400px;
+    width: 100%;
 }
 
 div.sub button {
@@ -568,10 +582,6 @@ div.sub button {
         opacity: 0.5;
  }
 
-.sub>div {
-    overflow: hidden;
-}
-
 .sub p.text-day::after {
     content: "";
     width: 40px;
@@ -584,10 +594,6 @@ div.sub button {
 
 .new-left {
     background-color: rgb(236, 230, 230);
-}
-
-.new-left .sub {
-    width: 30%;
 }
 
 .new-left h3 {
@@ -643,9 +649,10 @@ div.sub button {
 .new-right {
     position: relative;
     background-color: beige;
-    margin-left: 5px;
-    height: 460px;
-    width: 390px;
+    flex: 1;
+    height: 430px;
+    margin: 50px 15px;
+    margin-right: 65px;
 }
 
 .new-right h3 {
@@ -660,7 +667,7 @@ div.sub button {
 .event {
     display: flex;
     background-color: beige;
-    padding: 0px 40px;
+    padding: 0 15px;
 }
 
 .event h5 {
@@ -673,7 +680,7 @@ div.sub button {
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     display: -webkit-box;
-    padding-left: 30px;
+    padding: 0 20px;
 }
 
 .event h5 a {
@@ -686,7 +693,6 @@ div.sub button {
 }
 
 .event-list {
-    margin: 15px 0;
     overflow: hidden;
 }
 
