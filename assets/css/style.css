@@ -681,6 +681,7 @@ div.sub button {
     -webkit-box-orient: vertical;
     display: -webkit-box;
     padding: 0 20px;
+    margin-top: -5px;
 }
 
 .event h5 a {
