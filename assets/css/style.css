@@ -950,7 +950,7 @@ div#gototop:hover{
     bottom: 0;
     width: 265px;
     max-width: 100%;
-    background-color: #fff;
+    background-color: white;
     transform: translateX(-100%);
     opacity: 0;
     transition: transform linear 0.2s;
