@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="icon" href="./assets/img/logo.png" type="image/x-icon" />
+    <link rel="icon" href="./assets/img/logopage.png" type="image/x-icon" />
     <link rel="stylesheet"
         href="./assets/font/fontawesome-free-5.15.2-web (1)/fontawesome-free-5.15.2-web/css/all.min.css">
-    <title>MoNa Resorts</title>
+    <title>Howello</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -40,11 +41,30 @@
 
             });
         });
+        $(document).ready(function(){
+            $("#gototop").hide()
+
+            $(window).scroll(function(){
+                if($(this).scrollTop()>=200)
+                     $("#gototop").show("slow")
+                else
+                $("#gototop").hide("slow")
+
+            })
+            $("#gototop").click(function(){
+                $("html, body").animate({
+                    scrollTop:0
+                },500);
+            })
+        })
     </script>
 
 </head>
 
 <body>
+    <div id="gototop">
+        <a href="javascript:;" ><i class="fas fa-angle-up"></i></a>
+    </div>
     <div class="main">
         <div class="info-left">
             <i class="fas fa-phone"></i>
@@ -60,7 +80,35 @@
         </div>
     </div>
     <div id="header">
-
+        <label for="nav-mobile-input" class="nav__bars-btn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <input type="checkbox" hidden name="" class="nav-input" id="nav-mobile-input">
+        <label for="nav-mobile-input" class="nav__overlay"></label>
+        <div class="nav__mobile">
+            <div class="input-search">
+                <input class="timkiem" type="text" placeholder="Tìm kiếm.....">
+                <i class="fas fa-search"></i>
+            </div>
+            <ul class="nav__mobile-list">
+                <li><a href="#" class="nav__mobile-link">Trang Chủ</a></li>
+                <li><a href="#" class="nav__mobile-link">Giới thiệu</a></li>
+                <li><a href="#" class="nav__mobile-link">Phòng</a></li>
+                <li><a href="#" class="nav__mobile-link">Tin Tức </a></li>
+                <li><a href="#" class="nav__mobile-link">Liên hệ</a></li>
+                <li><a href="#" class="nav__mobile-link">Đăng Nhập</a></li>
+                <div class="nav__mobile-list-icon">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-instagram-square"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter-square"></i></a>
+                </div>
+                
+            </ul>
+            <label for="nav-mobile-input" class="nav__mobile-close">
+                <i class="fas fa-times"></i>
+            </label>
+        </div>
         <div class="img_logo">
             <a href="#"><img src="./assets/img/logo.png" alt="logo"></a>
         </div>
@@ -84,34 +132,35 @@
             <button type="button" class="btn ">
                 <a href="#"> <span>ĐẶT PHÒNG</span> </a>
             </button>
+            
         </div>
     </div>
-    <div id="myCarousel" class="carousel slide " data-ride="carousel">
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="./assets/img/slide-1.jpg" alt="Los Angeles">
+    <div class="carousel">
+        <div id="myCarousel" class="carousel slide " data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./assets/img/slide-1.jpg" alt="Los Angeles">
+                </div>
+    
+                <div class="item ">
+                    <img src="./assets/img/slide-2.jpg" alt="Chicago">
+                </div>
+                <div class="item ">
+                    <img src="./assets/img/slider-3.jpg" alt="Chicago">
+                </div>
+                <div class="item">
+                    <img src="./assets/img/slider-5.jpg" alt="Chicago">
+                </div>
             </div>
-
-            <div class="item">
-                <img src="./assets/img/slide-2.jpg" alt="Chicago">
-            </div>
-            <div class="item">
-                <img src="./assets/img/slider-3.jpg" alt="Chicago">
-            </div>
-            <div class="item">
-                <img src="./assets/img/slider-4.jpg" alt="Chicago">
-            </div>
-            <div class="item">
-                <img src="./assets/img/slider-5.jpg" alt="Chicago">
-            </div>
+    
         </div>
-
     </div>
+   
     <form action="/action_page.php" class=" animate__animated animate__bounceInRight">
         <h1 class="title-form">Đặt phòng</h1>
         <div class="form-group">
@@ -195,7 +244,7 @@
 
                 </div>
                 <div class="items">
-                    <div class="rooms">
+                    <div class="rooms rooms-center">
                         <div>
                             <img src="./assets/img/roomsilver.jpg" alt="roomsilver">
                         </div>
@@ -276,11 +325,13 @@
     </div>
 
     <section>
-        <div class="new-left">
+        <div class="text-news">
             <h3>
                 <span style="color: gold;">TIN TỨC</span>
                 MỚI NHẤT
             </h3>
+        </div>
+        <div class="new-left">
             <div class="new-item">
                 <div class="sub">
                     <div class="sub-img">
@@ -302,32 +353,40 @@
                     <p>Phú Quốc có nhiều bãi tắm đẹp với phong cảnh hoang sơ, trong lành thu ... </p>
                     <button type="button" class="btn ">ĐỌC THÊM</button>
                 </div>
-                <div class="new-right">
-                    <h3>
-                        <span style="color: gold;">SỰ Kiện</span>
-                        NỔI BẬT
-                    </h3>
-                    <div class="event">
-                        <div class="event-list">
-                            <img src="./assets/img/nhatrang.jpeg" alt="nhatrang">
+            </div>
+            <div class="text-none">
+                <h1 class="colorgold">
+                    DỊCH VỤ
+                </h1>
+                <h1>
+                    HẤP DẪN
+                </h1>
+            </div>
+            <div class="new-right">
+                <h3>
+                    <span style="color: gold;">SỰ Kiện</span>
+                    NỔI BẬT
+                </h3>
+                <div class="event">
+                    <div class="event-list">
+                        <img src="./assets/img/nhatrang.jpeg" alt="nhatrang">
 
-                        </div>
-                        <h5> <a href="#">Đến Vinpearl Nha Trang, nhận ưu đãi lớn với Vincharm Spa</a> </h5>
                     </div>
-                    <div class="event">
-                        <div class="event-list">
-                            <img src="./assets/img/dulich.jpg" alt="nhatrang">
-                        </div>
-                        <h5> <a href="#">Giới thiệu Khu du lịch sinh thái suối nước khoáng nóng Tiên Lãng</a> </h5>
+                    <h5> <a href="#">Đến Vinpearl Nha Trang, nhận ưu đãi lớn với Vincharm Spa</a> </h5>
+                </div>
+                <div class="event">
+                    <div class="event-list">
+                        <img src="./assets/img/dulich.jpg" alt="nhatrang">
                     </div>
-                    <div class="event">
-                        <div class="event-list">
-                            <img src="./assets/img/stay.jpg" alt="nhatrang">
-                        </div>
-                        <h5> <a href="#">Gói dịch vụ Stay &amp; Play: Chơi golf và nghỉ dưỡng tại khách sạn Vinpearl
-                                Resort
-                                Nha Trang</a> </h5>
+                    <h5> <a href="#">Giới thiệu Khu du lịch sinh thái suối nước khoáng nóng Tiên Lãng</a> </h5>
+                </div>
+                <div class="event">
+                    <div class="event-list">
+                        <img src="./assets/img/stay.jpg" alt="nhatrang">
                     </div>
+                    <h5> <a href="#">Gói dịch vụ Stay &amp; Play: Chơi golf và nghỉ dưỡng tại khách sạn Vinpearl
+                            Resort
+                            Nha Trang</a> </h5>
                 </div>
             </div>
 

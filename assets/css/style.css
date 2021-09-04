@@ -246,7 +246,7 @@ div.search:hover #input-search {
     right: 15px;
     width: 40px;
     height: 35px;
-    background: #ffb606;
+    background: #ffb606 !important;
     align-items: center;
     justify-content: center;
     color: #fff;
@@ -454,7 +454,7 @@ div.rooms>div {
 div.rooms img {
     width: 100%;
     margin: 0 auto;
-    height: 300px;
+    height: 250px;
 }
 
 div.rooms img:hover {
@@ -546,15 +546,37 @@ div.room button {
     font-size: 20px;
 }
 
-.new-item {
+
+section{
+    background-color: rgb(236, 230, 230);
+}
+.new-left {
     display: flex;
-    height: 500px;
+    
+    height: 550px;
+}
+.text-none{
+    display: none;
 }
 
+.text-news h3 {
+    margin-top: 0;
+    margin-left: 45px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 75px;
+    margin-bottom: -15px;
+}
+.new-item {
+    display: flex;
+    flex: 2;
+}
+
+
+
 div.sub {
-    flex: 1;
-    height: 400px;
     margin: 50px 15px;
+    height: 400px;
 }
 div.sub:first-child{
     margin-left: 65px;
@@ -591,20 +613,6 @@ div.sub button {
     left: 0;
     top: 18%;
 }
-
-.new-left {
-    background-color: rgb(236, 230, 230);
-}
-
-.new-left h3 {
-    margin-top: 0;
-    margin-left: 45px;
-    padding-bottom: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding-top: 75px;
-}
-
 .sub h5:hover {
     color: #ffb606;
 }
@@ -651,15 +659,11 @@ div.sub button {
     background-color: beige;
     flex: 1;
     height: 430px;
-    margin: 50px 20px;
+    margin: 50px 15px;
     margin-right: 65px;
 }
 
 .new-right h3 {
-    margin-top: -125px;
-    margin-bottom: 30px;
-    padding-bottom: 10px;
-    margin-left: 0px;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -667,11 +671,11 @@ div.sub button {
 .event {
     display: flex;
     background-color: beige;
-    padding: 0 15px;
+    padding: 8px 15px;
 }
 
 .event h5 {
-    font-size: 18px;
+    font-size: 19px;
     font-weight: 700;
     line-height: 1.7em;
     width: 50%;
@@ -680,7 +684,7 @@ div.sub button {
     -webkit-line-clamp: 4;
     -webkit-box-orient: vertical;
     display: -webkit-box;
-    padding: 0 20px;
+    padding: 0 30px;
     margin-top: -5px;
 }
 
@@ -897,4 +901,143 @@ div.sub button {
 .banquyen-child a:hover{
     text-decoration: none;
     color: #fff;
+}
+/* GOTOTOP */
+div#gototop{
+    font-size: 30px;
+    display: block;
+    padding: 3px 15px;
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 50%;
+    border: 1px solid #000;
+    background-color: #fff;
+    z-index: 10000000;
+    opacity: 0.7;
+}
+div#gototop a{
+    color: rgba(0, 0, 0, 0.6);
+}
+div#gototop a:hover{
+    color: white;
+}
+div#gototop:hover{
+    background-color: gold;
+}
+/* Mobile nav */
+.nav__bars-btn{
+    font-size: 30.4px;
+    color: #000;
+    margin: 30px 20px 20px 0;
+    display: none;
+}
+.nav__overlay{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    animation: fadeIn linear 0.2s;
+}
+
+.nav__mobile{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 265px;
+    max-width: 100%;
+    background-color: #fff;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform linear 0.2s;
+}
+.nav__mobile .input-search{
+    align-items: center;
+    justify-content: center;
+    width: 192px;
+    height: 35px;
+    border-radius: 2px;
+    background-color: #fff;
+    border: 1px solid #a3a1a1;
+    margin-left: 30px;
+    margin-top: 85px;
+}
+.nav__mobile .input-search i {
+    display: flex;
+    position: absolute;
+    right: 44px;
+    width: 40px;
+    top: 86px;
+    height: 33px;
+    background: #ffb606 !important;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+
+.nav__mobile .input-search i:hover {
+    background-color: rgb(163, 115, 2);
+}
+
+
+.nav__mobile-list{
+    margin-top: 24px;
+}
+.nav__mobile-list li  a{
+    padding: 15px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    font-family:serif;
+    border-bottom: 0.5px solid #ccc;
+}
+.nav__mobile-list li >a:hover{
+    text-decoration: none;
+    color: gold;
+}
+.nav__mobile-link{
+    text-decoration: none;
+    color: #333;
+    display: block;
+    padding: 8px 0;
+    font-size: 1.4rem;
+
+}
+.nav__mobile-list-icon{
+    margin-left: 20px;
+}
+.nav__mobile-list-icon a{
+    color: #000 ;
+    font-size: 22px;
+    
+}
+.nav__mobile-list-icon a i{
+    padding: 20px 5px;
+}
+.nav__mobile-close{
+    font-size: 1.6rem;
+    position: absolute;
+    color: #666;
+    top: 1rem;
+    right: 1rem;
+
+}
+.nav-input:checked ~.nav__overlay{
+    display: block;
+}
+.nav-input:checked ~ .nav__mobile{
+    transform: translateX(0);
+    opacity: 1;
+}
+@keyframes fadeIn{
+    form{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
