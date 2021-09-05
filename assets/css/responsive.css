@@ -1,5 +1,3 @@
-
-
 /*Smart phone nhỏ*/
 @media screen and (min-width: 240px) and (max-width:320px){
     .img_logo{
@@ -153,7 +151,7 @@
 
 }
 /*Tablet nhỏ(480 x 640)*/
-@media screen and (min-width:641px)and (max-width: 768px){
+@media screen and (min-width:641px)and (max-width: 812px){
     form{
         position: absolute;
     }
@@ -266,7 +264,7 @@
     }
     }  
 /*Ipad dọc(768 x 1024)*/
-@media screen and (min-width:769px)and (max-width: 1024px) {
+@media screen and (min-width:813px)and (max-width: 1024px) {
     #header{
         padding-left: 20px;
         padding-right: 20px;
@@ -369,7 +367,7 @@
   }
 }
 /* mobile */
-@media(max-width:768px){
+@media(max-width:812px){
     .nav__bars-btn{
         display: block;
     }
