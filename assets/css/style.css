@@ -948,7 +948,7 @@ div#gototop:hover{
     top: 0;
     left: 0;
     bottom: 0;
-    width: 265px;
+    width: 320px;
     max-width: 100%;
     background-color: white;
     transform: translateX(-100%);
@@ -969,7 +969,7 @@ div#gototop:hover{
 .nav__mobile .input-search i {
     display: flex;
     position: absolute;
-    right: 44px;
+    right: 99px;
     width: 40px;
     top: 86px;
     height: 33px;

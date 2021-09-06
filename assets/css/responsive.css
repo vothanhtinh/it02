@@ -1,28 +1,23 @@
-
-
 /*Smart phone nhỏ*/
-@media screen and (min-width: 240px) and (max-width:320px){
+@media all and (min-width:320px)and (max-width: 480px) {
     .img_logo{
         width: 200px;
+            margin-left: 10%;
+        
+    }
+    #header{
+        padding-left: 25px;
     }
     .event h5{
         font-size: 17px;
-    }   
-    
-}
-/*Smart phone lớn*/
-@media screen and (max-width: 480px)
-{
+    }  
     form {
         top: 41px;
         position: relative;
-        width: 315px;
+        width: 290px;
         height: 570px;
         right: 0px;
-        left: 7%;
-    }
-    div.text-1 {
-        margin-top: 15px;
+        left: 5%;
     }
     .img_logo img{
         width: 200px;
@@ -30,67 +25,45 @@
     label {
         padding: 0px 0;
     }
-    
     div.subtext p {
         padding: 5px 5px;
         text-align: center;
     }
     .content-item-1 {
-        margin-top: -365px;
+        margin-top: -40px;
+    }
+    .content-item-1>.text-1>h1{
+        font-size: 30px;
+    }
+    div.items{
+        flex-direction: column;
+        align-items: center;
     }
     div.item-1 {
-        margin: 50px 0px;
         padding: 0 5px;
     }
-    div.rooms {
-        margin: 50px 0px;
-    }
-    div.room h3{
-        font-size: 20px;
-    }
-    .counter-content {
-        padding: 0px 0px;
-    }
-    .footer-item-list {
-        width: 95%;
-        margin-left: 7px;
-    }
-    
-    
-
-}
-/*Small Tablet(480 x 640)*/
-@media screen and (max-width: 640px){
-    #header{
-        padding-left: 25px;
-    }
-    div.text-1 {
-        margin-top: 445px;
-    }
-    div.items {
-        flex-direction: column;
-        align-items: center;
-    }
-    div.item-1 p{
-        margin-left: 35%;
-    }
     div.item-1:first-child {
-        margin-left: 0px;
+        margin-left: 15px;
     }
     div.item-1:last-child {
-        margin-right: 0;
+        margin-right: 15px;
     }
-    .content-item-2 .text-2 {
-        align-items: center;
+    div.item-1 p{
+        margin-left: 20%;
+    }
+    .content-item-2 .text-2{
         flex-direction: column;
-        margin-left: 0;
+        margin-left: 10px;
     }
-    div.subtext p{
-        margin: 0 0 10px 0px;
+    .content-item-2 h2 {
+        font-size: 25px;
     }
-    .content-item-2 .text-2 button {
-        background-color: #ffb606;
-        margin-right: 25px;
+    .content-item-2 .text-2 button{
+        margin-left: 70px;
+    }
+    
+    div.rooms {
+        margin: 50px 0px;
     }
     div.rooms:first-child {
         margin-left: 0px;
@@ -98,13 +71,13 @@
     div.rooms:last-child {
         margin-right: 0px;
     }
+    div.room h3{
+        font-size: 20px;
+    }
     .text-background {
-        top: 20%;
+        top: 15%;
         left: 3%;
         text-align: center;
-    }
-    div.counter-item {
-        margin: 0 0px;
     }
     div.counter-item .counter{
         font-size: 40px;
@@ -113,27 +86,25 @@
     }
     div.counter-item h3{
         font-size: 22px;
-    text-align: center;
+      text-align: center;
     }
     .counter-content {
         flex-wrap: wrap;
-    }
-    .text-news h3 {
-        text-align: center;
+        padding: 0 0;
     }
     .new-left{
-        display: block;
+        flex-direction: column;
         height: 1530px;
     }
-    .new-item {
+    .new-item{
         flex-direction: column;
     }
     div.sub:first-child {
         margin-left: 15px;
     }
     .new-right{
-        margin: 0px 0px;
-        margin-right: 0px;
+        margin-right: 0;
+        margin: 0 0;
     }
     .footer-item-list>.logo-footer {
         width: 170px;
@@ -143,40 +114,30 @@
         padding: 5px 0;
     }
     .footer-item-list {
-        width: 65%;
+        width: 99%;
         margin-left: 20px;
     }
     .footer-item-list:first-child{
-        margin-left: 45px;
-        padding-top: 20px;
+        margin-left: 40px;
     }
-
-}
-/*Tablet nhỏ(480 x 640)*/
-@media all and (min-width: 480px) and (max-width: 812px){
-    form{
-        position: absolute;
-    }
-    .header{
-        margin-left: 10px;
+    
+ }
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .img_logo{
+        margin-left: 25%;
     }
     form{
-        top: 105px;
-        width: 345px;
-        height: 555px;
-        right: 10px;
+        position: relative;
+        top: 50px;
+        right: 0px;
+         left: 25%;
     }
-    .title-form{
-        margin-top: 10px;
+    div.items {
+        flex-direction: column;
+        align-items: center;
     }
-    form label{
-        padding: 0 0;
-    }
-    #btn-form{
-        margin: 10px 0px;
-    }
-    div.text-1 {
-        margin-top: 165px;
+    div.item-1 p{
+        margin-left: 125px;
     }
     div.item-1:first-child {
         margin-left: 15px;
@@ -184,74 +145,63 @@
     div.item-1:last-child {
         margin-right: 15px;
     }
-    div.items{
-        flex-flow: wrap;
+    .content-item-2 .text-2{
+        flex-direction: column;
+        align-items: center;
+    }
+    .content-item-2 h2 {
+        font-size: 25px;
+    }
+    div.subtext {
+    margin-left: 30px;
+}
+    .content-item-2 .text-2 button{
+        margin-left: 70px;
+    }
+    .content-item-2 .text-2 {
+        margin-left: 0px;
+    }
+    
+    div.rooms {
+        margin: 50px 0px;
     }
     div.rooms:first-child {
-        margin-left: 20px;
+        margin-left: 0px;
     }
     div.rooms:last-child {
-        flex: 0.5;
-        margin-left: 20px;
-        margin-right: 45px;
-    }
-    .rooms-center{
-        margin-right: 20px;
-    }
-    .text-news h3{
-        margin-left: 20px;
+        margin-right: 0px;
     }
     .text-background {
-        top: 20%;
-        left: 3%;
+        top: 15%;
+        left: 2%;
+        text-align: center;
     }
     div.counter-item .counter{
         font-size: 40px;
+        padding: 0 40px;
+        justify-content: space-evenly;
     }
     div.counter-item h3{
-        font-size: 18px;
+        font-size: 22px;
+      text-align: center;
+    }
+    .counter-content {
+        flex-wrap: wrap;
+        padding: 0 75px;
     }
     .new-left{
-        display: block;
-        height: 820px;
+        flex-direction: column;
+        height: 1530px;
     }
-    .text-none{
-        display: block;
-        display: flex;
-        margin-left: 20px;
-        
-    }
-    .text-none h1{
-        font-size: 20px;
-        font-weight: 700;
-    }
-    .text-none h1:last-child{
-        margin-left: 10px;
-    }
-    .text-none .colorgold{
-        color: gold;
+    .new-item{
+        flex-direction: column;
     }
     div.sub:first-child {
-        margin-left: 20px;
+        margin-left: 15px;
     }
-     .event{
-         display: block;
-         padding: 15px 25px;
-     }
-     .event h5{
-         width: 100%;
-         margin-top: 5px;
-         font-size: 15px;
-         padding: 0 2px;
-     }
-     .new-right {
-        display: flex;
-        background-color: beige;
-        height: 230px;
-        margin: 30px 0px;
-    }
-    .new-right h3{
-        display: none;
+    .new-right{
+        margin-right: 0;
+        margin: 0 0;
     }
     .footer-item-list>.logo-footer {
         width: 170px;
@@ -261,12 +211,125 @@
         padding: 5px 0;
     }
     .footer-item-list {
-        width: 47%;
+        width: 99%;
         margin-left: 20px;
     }
-    }  
-/*Ipad dọc(768 x 1024)*/
-@media screen and (min-width:812px)and (max-width: 1024px) {
+    .footer-item-list:first-child{
+        margin-left: 40px;
+    }
+}
+@media all and (min-width: 769px) and (max-width: 1023px) {
+    
+    #header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main{
+        margin: 0 20px;
+    }
+    .header-right{
+        width: 100%;
+    }
+    #input-search{
+        right: 70px;
+    }
+    form{
+        position: relative;
+        top: 25px;
+        width: 400px;
+        height: 615px;
+        right: 0;
+        margin-left: 30%;
+    }
+    .title-form {
+        margin-top: 5px;
+    }
+    form label{
+        margin-bottom: 0;
+    }
+    div.item-1:first-child {
+        margin-left: 25px;
+    }
+    div.item-1:last-child {
+        margin-right: 25px;
+    }
+    div.items{
+        flex-wrap: wrap;
+    }
+    div.rooms{
+        flex: none;
+        width: 42%;
+    }
+    div.rooms img {
+        height: 250px;
+    }
+    div.room button {
+        margin-right: 20px;
+    }
+    div.room h3{
+        font-size: 22px;
+        }
+    div.room h3 b{
+        font-size: 20px;
+    }
+    div.sub > .sub-img img {
+        height: 170px;
+        width: 352px;
+    }
+    div.rooms:last-child{
+        margin-left: 65px  ;
+    }
+    .text-background{
+        top: 20%;
+        left: 7%;
+    }
+    .new-left{
+        flex-wrap: wrap;
+        height: 1000px;
+    }
+    .new-right{
+        width: 305px;
+        height: 375px;
+    }
+    .event-list img {
+        width: 200px;
+        height: 100px;
+    }
+    div.sub:first-child {
+        margin-left: 25px;
+    }
+    div.sub:last-child{
+        margin-right: 25px;
+    }
+    .event{
+        margin-bottom: 35px;
+        padding-top: 10px;
+    }
+    .event h5{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.4;
+        padding: 0 20px;
+    }
+    .new-right h3 {
+        margin-top: -64px;
+        margin-bottom: 38px;
+    }
+    .footer-item{
+        flex-wrap: wrap;
+    }
+    .img-child .img-footer img {
+            width: 70px;
+        }
+    .img-child {
+            padding: 5px 12px 0 20px;
+        }
+    .footer-item-list {
+            width: 45%;
+            margin-left: 25px;
+        }
+}
+@media all and (min-width: 1024px) and (max-width: 1280px) {
     #header{
         padding-left: 20px;
         padding-right: 20px;
@@ -360,14 +423,10 @@
             width: 25%;
             margin-left: 25px;
         }
-}
-/*Ipad ngang(1024 x 768)*/
-@media  (min-width: 1024px){
-  .new-right h3{
-    margin-top: -65px;
-    margin-bottom: 38px;
-  }
-}
+ }
+
+
+
 /* mobile */
 @media(max-width:812px){
     .nav__bars-btn{
@@ -379,7 +438,5 @@
     .header-right{
         display: none;
     }
-    .img_logo{
-        margin-left: 10%;
-    }
+    
 }
