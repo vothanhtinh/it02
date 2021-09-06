@@ -266,7 +266,7 @@
     }
     }  
 /*Ipad dọc(768 x 1024)*/
-@media screen and (min-width:813px)and (max-width: 1024px) {
+@media screen and (min-width:812px)and (max-width: 1024px) {
     #header{
         padding-left: 20px;
         padding-right: 20px;
