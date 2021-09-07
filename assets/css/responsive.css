@@ -434,7 +434,7 @@
 
 
 /* mobile */
-@media(max-width:900px){
+@media(max-width:950px){
     .nav__bars-btn{
         display: block;
     }
