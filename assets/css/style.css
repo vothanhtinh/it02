@@ -133,7 +133,6 @@ body {
     top: 0;
     height: 70px;
     margin-top: 20px;
-    width: 40%;
 }
 
 .img_logo img {
@@ -875,7 +874,7 @@ div.sub button {
 }
 
 .img-child .img-footer img {
-    width: 79px;
+    width: 86px;
     padding-right: 3px;
     
 }
