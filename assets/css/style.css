@@ -578,6 +578,7 @@ section{
 div.sub {
     margin: 50px 15px;
     height: 400px;
+    flex: 1;
 }
 div.sub:first-child{
     margin-left: 65px;
@@ -667,6 +668,8 @@ div.sub button {
 .new-right h3 {
     font-weight: 700;
     text-transform: uppercase;
+    margin-top: -64px;
+    margin-bottom: 50px;
 }
 
 .event {
