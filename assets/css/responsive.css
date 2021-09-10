@@ -54,6 +54,7 @@
     .content-item-2 .text-2{
         flex-direction: column;
         margin-left: 10px;
+        align-items: center;
     }
     .content-item-2 h2 {
         font-size: 25px;
