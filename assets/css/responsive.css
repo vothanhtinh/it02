@@ -192,6 +192,11 @@
     .new-left{
         flex-direction: column;
         height: 1530px;
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+    .text-news h3{
+        margin-left: 90px;
     }
     .new-item{
         flex-direction: column;
