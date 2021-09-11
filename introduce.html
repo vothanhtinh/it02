@@ -15,9 +15,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- Slick -->
-    
-<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- wow -->
     <link rel="stylesheet" href="./assets/css/animate.css">
     <script src="./assets/js/wow.min.js"></script>
@@ -28,12 +28,22 @@
 
         $(document).ready(function () {
             $('.service-right').slick({
-                 dots: true,
-                 infinite: true,
-                 speed: 500,
-                 fade: true,
-                 cssEase: 'linear'
-        });
+
+                infinite: true,
+                speed: 500,
+                fade: true,
+                cssEase: 'linear'
+            });
+        })
+    </script>
+    <script>
+
+        $(document).ready(function () {
+            $('.customer').slick({
+                dots: true,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
         })
     </script>
     <script>
@@ -113,7 +123,8 @@
             </div>
             <ul class="nav__mobile-list">
                 <li><a href="https://vothanhtinh.github.io/it02/index.html" class="nav__mobile-link">Trang Chủ</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/introduce.html" class="nav__mobile-link">Giới thiệu</a></li>
+                <li><a href="https://vothanhtinh.github.io/it02/introduce.html" class="nav__mobile-link">Giới thiệu</a>
+                </li>
                 <li><a href="#" class="nav__mobile-link">Phòng</a></li>
                 <li><a href="#" class="nav__mobile-link">Tin Tức </a></li>
                 <li><a href="#" class="nav__mobile-link">Liên hệ</a></li>
@@ -206,14 +217,16 @@
                 </span>
             </p>
             <button type="button" class="btn-contact ">
-                 <span>LIÊN HỆ</span>
+                <span>LIÊN HỆ</span>
             </button>
 
         </div>
     </div>
+    <div class="text-service">
         <h1>
-        <span style="color: gold;"> DỊCH VỤ</span> CHÍNH
+            <span style="color: gold;"> DỊCH VỤ</span> CHÍNH
         </h1>
+    </div>
     <div class="service">
         <div class="service-left">
             <div class="service-left-list">
@@ -231,14 +244,14 @@
             <div class="service-left-list">
                 <i class="fas fa-caret-right"></i>
                 <p>Bar & Gym</p>
-                
+
             </div>
             <div class="service-left-list">
-                <i class="fas fa-caret-right"></i>  
+                <i class="fas fa-caret-right"></i>
                 <p>Hồ bơi ngoài trời</p>
             </div>
             <div class="service-left-list">
-                <i class="fas fa-caret-right"></i>  
+                <i class="fas fa-caret-right"></i>
                 <p>Thuê xe hơi</p>
             </div>
 
@@ -249,7 +262,58 @@
             <img src="./assets/img/roomsilver.jpg" alt="roomsilver">
         </div>
     </div>
-    
+    <div class="container-customer">
+        <div class="customer">
+            <div class="customer-child">
+                <div class="img-customer-child">
+                    <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/customer-3-150x150.png">
+                </div>
+
+                <div class="text-customer-child">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ
+                        chuyên
+                        nghiệp của các nhân viên nơi đây. Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than
+                        thiện
+                        cũng như cung cách phục vụ chuyên nghiệp của các nhân viên nơi đây.</p>
+                    <h5 style="color: #ffb606;">Khách hàng</h5>
+                </div>
+            </div>
+            <div class="customer-child">
+                <div class="img-customer-child">
+
+                    <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/customer-2-150x150.png">
+                </div>
+
+                <div class="text-customer-child">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ
+                        chuyên
+                        nghiệp của các nhân viên nơi đây. Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than
+                        thiện
+                        cũng như cung cách phục vụ chuyên nghiệp của các nhân viên nơi đây.</p>
+                    <h5 style="color: #ffb606;">Khách hàng</h5>
+                </div>
+            </div>
+            <div class="customer-child">
+                <div class="img-customer-child">
+
+                    <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/customer-4-150x150.png">
+                </div>
+                <div class="text-customer-child">
+                    <i class="fas fa-quote-left"></i>
+                    <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ
+                        chuyên
+                        nghiệp của các nhân viên nơi đây. Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than
+                        thiện
+                        cũng như cung cách phục vụ chuyên nghiệp của các nhân viên nơi đây.</p>
+                         <h5 style="color: #ffb606;">Khách hàng</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 </body>
