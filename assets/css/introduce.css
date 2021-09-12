@@ -691,14 +691,17 @@ div#gototop:hover {
     margin-left: 30px;
     margin-top: 85px;
 }
-
+.nav__mobile input[type="text"] {
+    width: 190px;
+    height: 35px;
+}
 .nav__mobile .input-search i {
     display: flex;
     position: absolute;
     right: 99px;
     width: 40px;
     top: 86px;
-    height: 33px;
+    height: 35px;
     background: #ffb606 !important;
     align-items: center;
     justify-content: center;
