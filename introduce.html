@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/introduce.css">
+    <link rel="stylesheet" href="./assets/css/introduce-reponsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="./assets/img/logopage.png" type="image/x-icon" />
     <link rel="stylesheet"
@@ -19,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <!-- wow -->
-    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="./assets/css/animate.css"> 
     <script src="./assets/js/wow.min.js"></script>
     <script type="text/javascript">
         new WOW().init();
@@ -41,8 +42,10 @@
         $(document).ready(function () {
             $('.customer').slick({
                 dots: true,
-                autoplay: true,
-                autoplaySpeed: 2000,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
             });
         })
     </script>
@@ -262,54 +265,71 @@
             <img src="./assets/img/roomsilver.jpg" alt="roomsilver">
         </div>
     </div>
-    <div class="container-customer">
-        <div class="customer">
-            <div class="customer-child">
-                <div class="img-customer-child">
-                    <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/customer-3-150x150.png">
+    
+    <div class="carousel">
+        <div id="myCarousel" class="carousel slide " data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <div class="customer-child">
+                        <div class="img-customer-child">
+                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/customer-3-150x150.png">
+                        </div>
+        
+                        <div class="text-customer-child">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ
+                                chuyên
+                                nghiệp của các nhân viên nơi đây. Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than
+                                thiện
+                                cũng như cung cách phục vụ chuyên nghiệp của các nhân viên nơi đây.</p>
+                            <h5 style="color: #ffb606;">Khách hàng</h5>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="text-customer-child">
-                    <i class="fas fa-quote-left"></i>
-                    <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ
-                        chuyên
-                        nghiệp của các nhân viên nơi đây. Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than
-                        thiện
-                        cũng như cung cách phục vụ chuyên nghiệp của các nhân viên nơi đây.</p>
-                    <h5 style="color: #ffb606;">Khách hàng</h5>
+    
+                <div class="item ">
+                    <div class="customer-child">
+                        <div class="img-customer-child">
+        
+                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/customer-2-150x150.png">
+                        </div>
+        
+                        <div class="text-customer-child">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ
+                                chuyên
+                                nghiệp của các nhân viên nơi đây. Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than
+                                thiện
+                                cũng như cung cách phục vụ chuyên nghiệp của các nhân viên nơi đây.</p>
+                            <h5 style="color: #ffb606;">Khách hàng</h5>
+                        </div>
+                    </div>
                 </div>
+                <div class="item ">
+                    <div class="customer-child">
+                        <div class="img-customer-child">
+        
+                            <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/customer-4-150x150.png">
+                        </div>
+                        <div class="text-customer-child">
+                            <i class="fas fa-quote-left"></i>
+                            <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ
+                                chuyên
+                                nghiệp của các nhân viên nơi đây. Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than
+                                thiện
+                                cũng như cung cách phục vụ chuyên nghiệp của các nhân viên nơi đây.</p>
+                                 <h5 style="color: #ffb606;">Khách hàng</h5>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            <div class="customer-child">
-                <div class="img-customer-child">
-
-                    <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/customer-2-150x150.png">
-                </div>
-
-                <div class="text-customer-child">
-                    <i class="fas fa-quote-left"></i>
-                    <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ
-                        chuyên
-                        nghiệp của các nhân viên nơi đây. Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than
-                        thiện
-                        cũng như cung cách phục vụ chuyên nghiệp của các nhân viên nơi đây.</p>
-                    <h5 style="color: #ffb606;">Khách hàng</h5>
-                </div>
-            </div>
-            <div class="customer-child">
-                <div class="img-customer-child">
-
-                    <img src="http://mauweb.monamedia.net/howello/wp-content/uploads/2019/03/customer-4-150x150.png">
-                </div>
-                <div class="text-customer-child">
-                    <i class="fas fa-quote-left"></i>
-                    <p>Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than thiện cũng như cung cách phục vụ
-                        chuyên
-                        nghiệp của các nhân viên nơi đây. Bạn sẽ dễ dàng cảm nhận được sự hiếu khách, nụ cười than
-                        thiện
-                        cũng như cung cách phục vụ chuyên nghiệp của các nhân viên nơi đây.</p>
-                         <h5 style="color: #ffb606;">Khách hàng</h5>
-                </div>
-            </div>
+    
         </div>
     </div>
 
