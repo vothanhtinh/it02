@@ -1,0 +1,163 @@
+@media all and (min-width:320px)and (max-width: 480px) {
+    .img_logo{
+        width: 200px;
+            margin:auto;
+        
+    }
+    #header{
+        padding-left: 25px;
+    }
+    .img_logo img{
+        width: 200px;
+    }
+    .img-behind-header .text-behind {
+        margin-left: 28%;
+    }
+    .rooms{
+        flex-direction: column;
+    }
+    .room-child:first-child {
+        margin-left: 15px;
+    }
+    .room-child:last-child{
+        margin-right: 15px;
+    }
+    .room-price {
+        margin-bottom: 15px;
+    }
+    
+    .footer-item-list>.logo-footer {
+        width: 170px;
+    }
+    .footer-item {
+        flex-wrap: wrap;
+        padding: 5px 0;
+    }
+    .footer-item-list {
+        width: 99%;
+        margin-left: 20px;
+    }
+    .footer-item-list:first-child{
+        margin-left: 40px;
+    }
+    
+ }
+@media all and (min-width: 480px) and (max-width: 768px) {
+    .img_logo{
+        margin-left: 25%;
+    }
+    .rooms{
+        flex-direction: column;
+        align-items: center;
+    }
+    .room-child:first-child {
+        margin-left: 15px;
+    }
+    .room-child:last-child{
+        margin-right: 15px;
+    }
+    
+    
+    
+    .footer-item{
+        flex-wrap: wrap;
+    }
+    .img-child .img-footer img {
+            width: 70px;
+        }
+    .img-child {
+            padding: 5px 12px 0 20px;
+        }
+    .footer-item-list {
+            width: 45%;
+            margin-left: 25px;
+        }
+}
+@media all and (min-width: 769px) and (max-width: 1023px) {
+    
+    #header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main{
+        margin: 0 20px;
+    }
+    .img_logo {
+        width: 20%;
+    }
+    .img_logo img{
+        width: 255px;
+    }
+    .rooms{
+        flex-wrap: wrap;
+    }
+    .room-child:first-child{
+        margin-left: 15px;
+    }
+    .room-child:last-child{
+        flex: none;
+    }
+   
+    .footer-item{
+        flex-wrap: wrap;
+    }
+    .img-child .img-footer img {
+            width: 70px;
+        }
+    .img-child {
+            padding: 5px 12px 0 20px;
+        }
+    .footer-item-list {
+            width: 45%;
+            margin-left: 25px;
+        }
+}
+@media all and (min-width: 1024px) and (max-width: 1280px) {
+    #header{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .main{
+        margin: 0 20px;
+    }
+    .header-right{
+        width: 100%;
+    }
+    #input-search{
+        right: 30px;
+    }
+    .room-child:first-child{
+        margin-left: 10px;
+    }
+    .room-child:last-child{
+        margin-right: 10px;
+    }
+   
+
+    .img-child .img-footer img {
+            width: 70px;
+        }
+    .img-child {
+            padding: 5px 12px 0 20px;
+        }
+    .footer-item-list {
+            width: 25%;
+            margin-left: 25px;
+        }
+ }
+
+
+
+/* mobile */
+@media(max-width:950px){
+    .nav__bars-btn{
+        display: block;
+    }
+    .main{
+        display: none;
+    }
+    .header-right{
+        display: none;
+    }
+    
+}
