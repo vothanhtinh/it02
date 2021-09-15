@@ -401,12 +401,16 @@ div.room-child>div{
 #contact-child p {
     font-size: 14px;
 }
+.rooms .hollow{
+    background: #eee;
+    margin-left: 2.0em;
+}
 
 .hollow {
-    background: #eee;
+    background: gold;
     height: 1px;
     width: 55px;
-    margin-left: 1.5em;
+    
 }
 
 #contact-child i {
