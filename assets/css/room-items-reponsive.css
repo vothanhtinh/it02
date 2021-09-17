@@ -11,20 +11,29 @@
         width: 200px;
     }
     .img-behind-header .text-behind {
-        margin-left: 28%;
+        margin-left: 22%;
     }
-    .rooms{
+    .content-room{
         flex-direction: column;
+        align-items: center;
     }
-    .room-child:first-child {
-        margin-left: 15px;
+    div.rooms {
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
     }
-    .room-child:last-child{
-        margin-right: 15px;
+    div.rooms >img{
+        height: 250px;
     }
-    .room-price {
-        margin-bottom: 15px;
+    div.thumb img{
+        height: 65px;
     }
+    form{
+        width: 335px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
     
     .footer-item-list>.logo-footer {
         width: 170px;
@@ -46,15 +55,26 @@
     .img_logo{
         margin-left: 25%;
     }
-    .rooms{
+    .img-behind-header .text-behind {
+        margin-left: 38%;
+    }
+    .content-room{
         flex-direction: column;
         align-items: center;
     }
-    .room-child:first-child {
-        margin-left: 15px;
+    div.rooms {
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
     }
-    .room-child:last-child{
-        margin-right: 15px;
+    div.rooms >img{
+        height: 430px;
+    }
+    
+    form{
+        width: 335px;
+        margin-right: 0;
+        margin-bottom: 20px;
     }
     
     
@@ -88,16 +108,25 @@
     .img_logo img{
         width: 255px;
     }
-    .rooms{
-        flex-wrap: wrap;
+    .content-room{
+        flex-direction: column;
+        align-items: center;
     }
-    .room-child:first-child{
-        margin-left: 15px;
+    div.rooms {
+        width: 95%;
+        margin-left: 10px;
+        margin-right: 10px;
     }
-    .room-child:last-child{
-        flex: none;
-        width: 47%;
+    div.rooms >img{
+        height: 430px;
     }
+    
+    form{
+        width: 400px;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+   
    
     .footer-item{
         flex-wrap: wrap;
@@ -125,14 +154,16 @@
         width: 100%;
     }
     #input-search{
-        right: 30px;
+        right: 70px;
     }
-    .room-child:first-child{
+    div.rooms{
         margin-left: 10px;
     }
-    .room-child:last-child{
+    form{
         margin-right: 10px;
     }
+
+   
    
 
     .img-child .img-footer img {
