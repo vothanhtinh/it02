@@ -104,7 +104,6 @@ body {
     background: #fff;
     display: flex;
     z-index: 1;
-    position: fixed;
     padding-left: 70px;
     padding-right: 70px;
 }
