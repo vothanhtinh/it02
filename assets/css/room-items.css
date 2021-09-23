@@ -675,6 +675,7 @@ div#gototop:hover{
     transform: translateX(-100%);
     opacity: 0;
     transition: transform linear 0.2s;
+    z-index: 9999;
 }
 .nav__mobile .input-search{
     align-items: center;
