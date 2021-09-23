@@ -38,6 +38,7 @@ body {
 } 
 button:focus{
     outline: none;
+    text-decoration: none;
 }
 
 .btn a {

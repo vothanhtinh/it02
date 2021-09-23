@@ -301,6 +301,7 @@ input {
 }
 .contact__list{
     display: flex;
+    margin-bottom: 20px;
 }
 .contact__list-form{
     margin-left: 75px;
@@ -326,7 +327,8 @@ form{
 .contact__list-form input:focus{
     border: 1px solid gold;
     background: #fff;
-    box-shadow: 1px 0 1px 2px rgba(236, 209, 55, 0.6)
+    box-shadow: 0px 0 1px 2px rgba(236, 209, 55, 0.6)
+    
 }
 .contact__list-form  textarea{
     outline: none;
@@ -337,7 +339,7 @@ form{
     box-shadow: 1px 0 1px 2px rgba(236, 209, 55, 0.6)
 }
 .contact__list-form .form__group{
-    margin: 15px 0 15px 0;
+    margin: 10px 0 10px 0;
 }
 .contact__list-form button{
     width: 200px;
@@ -346,10 +348,66 @@ form{
 .contact__list-info{
     flex: 1;
 }
+.contact__list-info>div{
+    padding: 15px 0 ;
+}
+.contact__list-info h1{
+    margin-bottom: 1em;
+    font-size: 1.6em;
+    line-height: 1.3;
+    color: #1c1c1c;
+    font-weight: 700;
+}
+.contact__list-info h3{
+    font-size: 1.25em;
+    font-weight: 700;
+}
+.contact__list-info  i{
+    font-size: 20px;
+}
 .address{
     display: flex;
 }
-
+ 
+.address .text__address{
+    margin-top: -20px;
+    margin-left: 20px;
+}
+.phone-number{
+    display: flex;
+}
+.text__phone-number{
+    margin-top: -20px;
+    margin-left: 20px;
+}
+.email{
+    display: flex;
+}
+.text__email{
+    margin-top: -20px;
+    margin-left: 20px;
+}
+.contact__list-info p,.contact__list-info a{
+    color: #898989;
+    line-height: 1.6;
+    font-size: 16px;
+}
+.contact__list-info a:focus{
+    text-decoration: none;
+    color: gold;
+}
+.contact__list-info a:hover{
+    color: gold;
+    text-decoration: none;
+}
+/* google__map */
+.google__map{
+    max-width: 100%;
+    margin: 0 75px 20px 75px;
+}
+.google__map iframe{
+    width: 100% ;
+}
 
 
 
