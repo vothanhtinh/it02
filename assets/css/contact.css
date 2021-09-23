@@ -20,6 +20,9 @@ html {
 .clear {
     clear: both;
 }
+button:focus {
+    outline: none !important;
+}
 
 .btn {
     background-color: #ffb606;

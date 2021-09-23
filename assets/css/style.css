@@ -36,9 +36,8 @@ body {
     text-align: center;
     -webkit-appearance: none;
 } 
-button:focus{
-    outline: none;
-    text-decoration: none;
+button:focus {
+    outline: none !important;
 }
 
 .btn a {
