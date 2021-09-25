@@ -16,6 +16,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="./assets/css/animate.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ciar4n/izmir@1.0.1/izmir.min.css">
     <script src="./assets/js/wow.min.js"></script>
     <script type="text/javascript">
         new WOW().init();
@@ -170,23 +171,23 @@
         <h1 class="title-form">Đặt phòng</h1>
         <div class="form-group">
             <label for="pwd" class="name">Họ & Tên</label>
-            <input type="text" placeholder="  __">
+            <input type="text" placeholder="  __" required >
         </div>
         <div class="form-group">
             <label for="pwd" class="name">Số điện thoại</label>
-            <input type="text" placeholder="  __">
+            <input type="text" placeholder="  __" required>
         </div>
         <div class="form-group">
             <label for="pwd" class="name">Ngày nhận</label>
-            <input type="date" placeholder="  dd/mm/yyyy">
+            <input type="date" placeholder="  dd/mm/yyyy" required>
         </div>
         <div class="form-group">
             <label for="pwd" class="name">Ngày trả</label>
-            <input type="date" placeholder="  dd/mm/yyyy">
+            <input type="date" placeholder="  dd/mm/yyyy" required>
         </div>
         <div class="form-group">
             <label for="pwd" class="name">Số người</label>
-            <input type="text" placeholder="  __">
+            <input type="text" placeholder="  __" required>
         </div>
         <div id="btn-form">
         <button type="button" class="btn" style="background-color: #000;"><a href="#">Gửi</a> </button>
@@ -208,25 +209,38 @@
                         trung <br>tâm thể hình hiện đại và các hoạt động giải trí trên biển</p>
                 </div>
             </div>
-            <div class="items">
-                <div class="item-1  wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
-                    <div class="item-img">
-                        <img src="./assets/img/content-1.jpg" alt="content-1">
-                    </div>
-
-                    <p>Nhà hàng</p>
+            <div class="items ">
+                <div class="item-1   wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
+                    <figure class="c4-izmir c4-border-cc-2 c4-gradient-bottom-left c4-image-zoom-in" style="--primary-color: #ef6698; --secondary-color: #4028ac;">
+                        <img src="./assets/img/content-1.jpg" alt="Sample Image" />
+                        <figcaption class="c4-layout-center-center">
+                            <div class="c4-izmir-icon-wrapper c4-fade">
+                                <h3>Nhà Hàng</h3>
+                            </div>
+                        </figcaption>
+                    </figure>
+                
+                    
                 </div>
                 <div class="item-1  wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
-                    <div class="item-img">
-                        <img src="./assets/img/content-2.jpg" alt="content-1">
-                    </div>
-                    <p>Spa & Massage</p>
+                    <figure class="c4-izmir c4-border-cc-2 c4-gradient-bottom-left c4-image-zoom-in" style="--primary-color: #ef6698; --secondary-color: #4028ac;">
+                        <img src="./assets/img/content-2.jpg" alt="Sample Image" />
+                        <figcaption class="c4-layout-center-center">
+                            <div class="c4-izmir-icon-wrapper c4-fade">
+                                <h3>Spa & Massage</h3>
+                            </div>
+                        </figcaption>
+                    </figure>
                 </div>
                 <div class="item-1  wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
-                    <div class="item-img">
-                        <img src="./assets/img/content-3.jpg" alt="content-1">
-                    </div>
-                    <p>Dù lượn</p>
+                    <figure class="c4-izmir c4-border-cc-2 c4-gradient-bottom-left c4-image-zoom-in" style="--primary-color: #ef6698; --secondary-color: #4028ac;">
+                        <img src="./assets/img/content-3.jpg" alt="Sample Image" />
+                        <figcaption class="c4-layout-center-center">
+                            <div class="c4-izmir-icon-wrapper c4-fade">
+                                <h3>Dù lượn</h3>
+                            </div>
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
             <div class="clear"></div>
