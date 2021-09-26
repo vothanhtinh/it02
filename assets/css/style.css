@@ -46,6 +46,7 @@ button a{
 .btn a {
     color: #fff !important;
     font-weight: 700;
+    text-decoration: none;
 }
 
 .btn a:hover {
@@ -580,6 +581,26 @@ div.sub button {
     width: 100px;
     height: 30px;
     font-weight: 650;
+    display: block;
+    margin-top: 15px;
+    border-radius: 4px;
+
+
+}
+div.sub button:hover{
+    background-color:#ffb606;
+    
+}
+div.sub button a:hover{
+    color: #fff !important;
+    text-decoration: none;
+}
+div.sub button a{
+    color: #ffb606 !important;
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    padding: 5px;
 }
 
 .sub-img:hover{
