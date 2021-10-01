@@ -220,5 +220,7 @@
     .header-right{
         display: none;
     }
-    
+    #header{
+        opacity: 1 !important;
+    }
 }

@@ -963,7 +963,7 @@ div#gototop:hover{
     max-width: 100%;
     background-color: white;
     transform: translateX(-100%);
-    opacity: 0;
+    opacity: 1;
     transition: transform linear 0.2s;
 }
 .nav__mobile .input-search{

@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/javscript.js"></script>
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="./assets/img/logopage.png" type="image/x-icon" />
@@ -33,6 +34,7 @@
                             "z-index": 999999
                         }
                     );
+                   
                 }
                 else {
                     $('#header').css(
@@ -129,8 +131,8 @@
             <div class="search">
                 <i class="search-header fas fa-search">
                     <div id="input-search">
-                        <input class="timkiem" type="text" placeholder="tìm kiếm.....">
-                        <i class="fas fa-search"></i>
+                        <input class="timkiem" id="kw" type="text" placeholder="tìm kiếm.....">
+                        <i id="btnSearch" onclick="search()"  class="fas fa-search"></i>
                     </div>
                 </i>
             </div>

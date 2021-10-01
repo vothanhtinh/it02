@@ -50,6 +50,12 @@
         flex-direction: column;
         align-items: center;
     }
+    .rooms:last-child img{
+        width: 375px;
+    }
+    .room-child{
+        flex: none;
+    }
     .room-child:first-child {
         margin-left: 15px;
     }
@@ -96,7 +102,7 @@
     }
     .room-child:last-child{
         flex: none;
-        width: 47%;
+        width: 46%;
     }
    
     .footer-item{

@@ -7,6 +7,7 @@
     }
     #header{
         padding-left: 25px;
+        opacity: 1 !important;
     }
     .event h5{
         font-size: 17px;
@@ -124,6 +125,9 @@
     
  }
 @media all and (min-width: 480px) and (max-width: 768px) {
+    #header{
+        opacity: 1 !important;
+    }
     .img_logo{
         margin-left: 25%;
     }
@@ -229,6 +233,7 @@
     #header{
         padding-left: 20px;
         padding-right: 20px;
+        opacity: 1 !important;
     }
     .main{
         margin: 0 20px;
