@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <script src="./assets/js/javscript.js"></script>
     <link rel="stylesheet" href="./assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="icon" href="./assets/img/logopage.png" type="image/x-icon" />
@@ -22,6 +21,7 @@
     <script type="text/javascript">
         new WOW().init();
     </script>
+    <!-- header -->
     <script>
         $(document).ready(function () {
             $(window).scroll(function () {
@@ -33,8 +33,8 @@
                             "top": 0,
                             "z-index": 999999
                         }
-                    );
-                   
+                    )
+
                 }
                 else {
                     $('#header').css(
@@ -43,35 +43,70 @@
                             "opacity": 1,
                             "z-index": 99999
                         }
-                    );
+                    )
 
                 }
 
-            });
+            })
         });
-        $(document).ready(function(){
+
+    </script>
+    <!-- gototop -->
+    <script>
+        $(document).ready(function () {
             $("#gototop").hide()
 
-            $(window).scroll(function(){
-                if($(this).scrollTop()>=200)
-                     $("#gototop").show("slow")
+            $(window).scroll(function () {
+                if ($(this).scrollTop() >= 200)
+                    $("#gototop").show("slow")
                 else
-                $("#gototop").hide("slow")
+                    $("#gototop").hide("slow")
 
             })
-            $("#gototop").click(function(){
+            $("#gototop").click(function () {
                 $("html, body").animate({
-                    scrollTop:0
-                },500);
+                    scrollTop: 0
+                }, 500);
+            })
+            
+            // khung đăng nhập
+    
+            $(".login-container").hide()
+            $(".button-login").click(function(){
+                $(".login-container").css({
+                    "display":"block",
+                    "z-index":999999999,
+                });
+                
+            })
+            $("#login-close").click(function(){
+                $(".login-container").css({
+                    "display":"none",
+                })
+                $(".nav__mobile").css({
+                    "display":"block",
+                })
             })
         })
     </script>
+    
+    <!-- tự động đóng  -->
+    <script>
+        $(document).ready(function(){
+            $(".nav__mobile-link").click(function(){
+                $(".nav__mobile").css({
+                    "display":"none",
+                })
+            })
+        })
+    </script>
+    
 
 </head>
 
 <body>
     <div id="gototop">
-        <a href="javascript:;" ><i class="fas fa-angle-up"></i></a>
+        <a href="javascript:;"><i class="fas fa-angle-up"></i></a>
     </div>
     <div class="main">
         <div class="info-left">
@@ -99,19 +134,20 @@
                 <i class="fas fa-search"></i>
             </div>
             <ul class="nav__mobile-list">
-                <li><a href="https://vothanhtinh.github.io/it02/index.html" class="nav__mobile-link">Trang Chủ</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/introduce.html" class="nav__mobile-link">Giới thiệu</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/room.html" class="nav__mobile-link">Phòng</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/news.html" class="nav__mobile-link">Tin Tức </a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/contact.html" class="nav__mobile-link">Liên hệ</a></li>
-                <li><a href="#" class="nav__mobile-link">Đăng Nhập</a></li>
+                <li><a href="index.html" class="nav__mobile-link">Trang Chủ</a></li>
+                <li><a href="introduce.html" class="nav__mobile-link">Giới thiệu</a>
+                </li>
+                <li><a href="room.html" class="nav__mobile-link">Phòng</a></li>
+                <li><a href="news.html" class="nav__mobile-link">Tin Tức </a></li>
+                <li><a href="contact.html" class="nav__mobile-link">Liên hệ</a></li>
+                <li> <button class="button-login nav__mobile-link"> Đăng Nhập</button></li>
                 <div class="nav__mobile-list-icon">
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                     <a href="#"><i class="fab fa-instagram-square"></i></a>
                     <a href="#"><i class="fab fa-pinterest-square"></i></a>
                     <a href="#"><i class="fab fa-twitter-square"></i></a>
                 </div>
-                
+
             </ul>
             <label for="nav-mobile-input" class="nav__mobile-close">
                 <i class="fas fa-times"></i>
@@ -123,24 +159,24 @@
         <div class="header-right">
             <ul id="nav">
                 <li><a href="#">Trang Chủ</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/introduce.html">Giới Thiệu</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/room.html">Phòng</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/news.html">Tin Tức</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/contact.html"> Liên Hệ</a></li>
+                <li><a href="introduce.html">Giới Thiệu</a></li>
+                <li><a href="room.html">Phòng</a></li>
+                <li><a href="news.html">Tin Tức</a></li>
+                <li><a href="contact.html"> Liên Hệ</a></li>
             </ul>
             <div class="search">
                 <i class="search-header fas fa-search">
                     <div id="input-search">
                         <input class="timkiem" id="kw" type="text" placeholder="tìm kiếm.....">
-                        <i id="btnSearch" onclick="search()"  class="fas fa-search"></i>
+                        <i id="btnSearch" class="fas fa-search"></i>
                     </div>
                 </i>
             </div>
 
-            <button type="button" class="btn ">
-                <a href="https://vothanhtinh.github.io/it02/room.html"> <span>ĐẶT PHÒNG</span> </a>
+            <button type="button" class="button-login ">
+                <span>Đăng Nhập</span> 
             </button>
-            
+
         </div>
     </div>
     <div class="carousel">
@@ -154,7 +190,7 @@
                 <div class="item active">
                     <img src="./assets/img/slide-1.jpg" alt="Los Angeles">
                 </div>
-    
+
                 <div class="item ">
                     <img src="./assets/img/slide-2.jpg" alt="Chicago">
                 </div>
@@ -165,37 +201,40 @@
                     <img src="./assets/img/slider-5.jpg" alt="Chicago">
                 </div>
             </div>
-    
-        </div>
-    </div>
-   
-    <form action="https://vothanhtinh.github.io/it02/index.html" class="wow fadeInRight" data-wow-duration="2s">
-        <h1 class="title-form">Đặt phòng</h1>
-        <div class="form-group">
-            <label for="pwd" class="name">Họ & Tên</label>
-            <input type="text" placeholder="  __" required >
-        </div>
-        <div class="form-group">
-            <label for="pwd" class="name">Số điện thoại</label>
-            <input type="text" placeholder="  __" required>
-        </div>
-        <div class="form-group">
-            <label for="pwd" class="name">Ngày nhận</label>
-            <input type="date" placeholder="  dd/mm/yyyy" required>
-        </div>
-        <div class="form-group">
-            <label for="pwd" class="name">Ngày trả</label>
-            <input type="date" placeholder="  dd/mm/yyyy" required>
-        </div>
-        <div class="form-group">
-            <label for="pwd" class="name">Số người</label>
-            <input type="text" placeholder="  __" required>
-        </div>
-        <div id="btn-form">
-        <input type="submit" value="Gửi" style="background-color: #000; color: #fff; width: 200px; border: none;">
 
         </div>
-    </form>
+    </div>
+    <div class="form-set-room">
+        <form action="https://vothanhtinh.github.io/it02/index.html" class="wow fadeInRight" data-wow-duration="2s">
+            <h1 class="title-form">Đặt phòng</h1>
+            <div class="form-group">
+                <label for="pwd" class="name">Họ & Tên</label>
+                <input type="text" placeholder="  __" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd" class="name">Số điện thoại</label>
+                <input type="text" placeholder="  __" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd" class="name">Ngày nhận</label>
+                <input type="date" placeholder="  dd/mm/yyyy" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd" class="name">Ngày trả</label>
+                <input type="date" placeholder="  dd/mm/yyyy" required>
+            </div>
+            <div class="form-group">
+                <label for="pwd" class="name">Số người</label>
+                <input type="text" placeholder="  __" required>
+            </div>
+            <div id="btn-form">
+                <input type="submit" value="Gửi"
+                    style="background-color: #000; color: #fff; width: 200px; border: none;">
+
+            </div>
+        </form>
+    </div>
+
     <div class="content">
         <div class="content-item-1">
             <div class="text-1">
@@ -213,7 +252,8 @@
             </div>
             <div class="items ">
                 <div class="item-1   wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
-                    <figure class="c4-izmir c4-border-cc-2 c4-gradient-bottom-left c4-image-zoom-in" style="--primary-color: #ef6698; --secondary-color: #4028ac;">
+                    <figure class="c4-izmir c4-border-cc-2 c4-gradient-bottom-left c4-image-zoom-in"
+                        style="--primary-color: #ef6698; --secondary-color: #4028ac;">
                         <img src="./assets/img/content-1.jpg" alt="Sample Image" />
                         <figcaption class="c4-layout-center-center">
                             <div class="c4-izmir-icon-wrapper c4-fade">
@@ -221,11 +261,12 @@
                             </div>
                         </figcaption>
                     </figure>
-                
-                    
+
+
                 </div>
                 <div class="item-1  wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
-                    <figure class="c4-izmir c4-border-cc-2 c4-gradient-bottom-left c4-image-zoom-in" style="--primary-color: #ef6698; --secondary-color: #4028ac;">
+                    <figure class="c4-izmir c4-border-cc-2 c4-gradient-bottom-left c4-image-zoom-in"
+                        style="--primary-color: #ef6698; --secondary-color: #4028ac;">
                         <img src="./assets/img/content-2.jpg" alt="Sample Image" />
                         <figcaption class="c4-layout-center-center">
                             <div class="c4-izmir-icon-wrapper c4-fade">
@@ -235,7 +276,8 @@
                     </figure>
                 </div>
                 <div class="item-1  wow fadeInDown" data-wow-duration="2s" data-wow-delay="0.5s">
-                    <figure class="c4-izmir c4-border-cc-2 c4-gradient-bottom-left c4-image-zoom-in" style="--primary-color: #ef6698; --secondary-color: #4028ac;">
+                    <figure class="c4-izmir c4-border-cc-2 c4-gradient-bottom-left c4-image-zoom-in"
+                        style="--primary-color: #ef6698; --secondary-color: #4028ac;">
                         <img src="./assets/img/content-3.jpg" alt="Sample Image" />
                         <figcaption class="c4-layout-center-center">
                             <div class="c4-izmir-icon-wrapper c4-fade">
@@ -260,11 +302,11 @@
                     </div>
 
                     <button type="button" class="btn">
-                        <a href="https://vothanhtinh.github.io/it02/room.html"> Xem Tất Cả </a>
+                        <a href="room.html"> Xem Tất Cả </a>
                     </button>
 
                 </div>
-                <div class="items"  >
+                <div class="items">
                     <div class="rooms rooms-center wow rotateInDownLeft" data-wow-duration="2s" data-wow-delay="0.5s">
                         <div>
                             <img src="./assets/img/roomsilver.jpg" alt="roomsilver">
@@ -275,7 +317,7 @@
                         <div class="room">
                             <h3>Giá: <b>50$</b>/1 đêm</h3>
                             <button type="button" class="btn">
-                                <a href="https://vothanhtinh.github.io/it02/room-silver.html"> Xem Chi Tiết </a>
+                                <a href="room-silver.html"> Xem Chi Tiết </a>
                             </button>
                         </div>
                     </div>
@@ -289,7 +331,7 @@
                         <div class="room">
                             <h3>Giá: <b>80$</b>/1 đêm</h3>
                             <button type="button" class="btn">
-                                <a href="https://vothanhtinh.github.io/it02/room-platinum.html">Xem Chi Tiết</span> </a>
+                                <a href="room-platinum.html">Xem Chi Tiết</span> </a>
                             </button>
                         </div>
                     </div>
@@ -303,7 +345,8 @@
                         <div class="room">
                             <h3>Giá: <b>40$</b>/1 đêm</h3>
                             <button type="button" class="btn">
-                                <a href="https://vothanhtinh.github.io/it02/room-bronze.html"> <span>Xem Chi Tiết</span> </a>
+                                <a href="room-bronze.html"> <span>Xem Chi Tiết</span>
+                                </a>
                             </button>
                         </div>
 
@@ -362,7 +405,8 @@
                     <p class="text-day">8 Tháng Ba, 2021</p>
                     <div class="hollow"></div>
                     <p>Những sắc màu của biển, của di tích, của lịch sử… pha trộn vào nhau... </p>
-                    <button type="button" ><a href="https://vothanhtinh.github.io/it02/vungtau.html"> ĐỌC THÊM</a>  </button>
+                    <button type="button"><a href="vungtau.html"> ĐỌC THÊM</a>
+                    </button>
                 </div>
                 <div class="sub wow flipInY" data-wow-duration="2s" data-wow-delay="0.5s">
                     <div class="sub-img">
@@ -372,7 +416,8 @@
                     <p class="text-day">8 Tháng Ba, 2021</p>
                     <div class="hollow"></div>
                     <p>Phú Quốc có nhiều bãi tắm đẹp với phong cảnh hoang sơ, trong lành thu ... </p>
-                    <button type="button" ><a href="https://vothanhtinh.github.io/it02/daophuquoc.html"> ĐỌC THÊM</a>  </button>
+                    <button type="button"><a href="daophuquoc.html"> ĐỌC THÊM</a>
+                    </button>
                 </div>
             </div>
             <div class="text-none">
@@ -393,19 +438,22 @@
                         <img src="./assets/img/nhatrang.jpeg" alt="nhatrang">
 
                     </div>
-                    <h5> <a href="https://vothanhtinh.github.io/it02/nhatrang.html">Đến Vinpearl Nha Trang, nhận ưu đãi lớn với Vincharm Spa</a> </h5>
+                    <h5> <a href="nhatrang.html">Đến Vinpearl Nha Trang, nhận ưu đãi
+                            lớn với Vincharm Spa</a> </h5>
                 </div>
                 <div class="event">
                     <div class="event-list">
                         <img src="./assets/img/dulich.jpg" alt="nhatrang">
                     </div>
-                    <h5> <a href="https://vothanhtinh.github.io/it02/khudulich.html">Giới thiệu Khu du lịch sinh thái suối nước khoáng nóng Tiên Lãng</a> </h5>
+                    <h5> <a href="khudulich.html">Giới thiệu Khu du lịch sinh thái
+                            suối nước khoáng nóng Tiên Lãng</a> </h5>
                 </div>
                 <div class="event">
                     <div class="event-list">
                         <img src="./assets/img/stay.jpg" alt="nhatrang">
                     </div>
-                    <h5> <a href="https://vothanhtinh.github.io/it02/tay&play.html">Gói dịch vụ Stay &amp; Play: Chơi golf và nghỉ dưỡng tại khách sạn Vinpearl
+                    <h5> <a href="stay&play.html">Gói dịch vụ Stay &amp; Play: Chơi
+                            golf và nghỉ dưỡng tại khách sạn Vinpearl
                             Resort
                             Nha Trang</a> </h5>
                 </div>
@@ -420,17 +468,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-       <script>
-           $('.counter').counterUp({
-               delay: 10,
-               time: 1000,
-           });
-       </script>
+    <script>
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000,
+        });
+    </script>
 </body>
- <div id="footer">
+<div id="footer">
     <div class="footer-item">
         <div class="footer-item-list">
-            <img src="./assets/img/logo_footer.png"   class="logo-footer">
+            <img src="./assets/img/logo_footer.png" class="logo-footer">
             <p>Đến với Khu nghỉ dưỡng Premier Village Mona Media, quý khách sẽ được trải nghiệm dịch vụ Spa
                 cao
                 cấp, trung tâm thể hình hiện đại và các hoạt động giải trí trên biển</p>
@@ -481,11 +529,12 @@
                     <ul>
                         <li><a href="https://vothanhtinh.github.io/it02/index.html">Trang chủ</a> </li>
                         <li><a href="https://vothanhtinh.github.io/it02/introduce.html">Giới Thiệu</a></li>
-                         <li><a href="https://vothanhtinh.github.io/it02/room.html">Phòng</a></li>
-                         <li><a href="https://vothanhtinh.github.io/it02/news.html">Tin Tức</a></li>
-                          <li><a href="https://vothanhtinh.github.io/it02/contact.html"> Liên Hệ</a></li>
+                        <li><a href="https://vothanhtinh.github.io/it02/room.html">Phòng</a></li>
+                        <li><a href="https://vothanhtinh.github.io/it02/news.html">Tin Tức</a></li>
+                        <li><a href="https://vothanhtinh.github.io/it02/contact.html"> Liên Hệ</a></li>
                     </ul>
-                    <button class="btn btn-warning"> <a href="https://vothanhtinh.github.io/it02/room.html "> ĐẶT PHÒNG</a></button>
+                    <button class="btn btn-warning"> <a href="https://vothanhtinh.github.io/it02/room.html "> ĐẶT
+                            PHÒNG</a></button>
                 </div>
             </div>
         </div>
@@ -495,8 +544,8 @@
                     <h5>hình ảnh</h5>
                     <div class="hollow"></div>
                     <div class="img-footer">
-                        <div class="img-footer-child" >
-                           <a href="#"> <img src="./assets/img/footer-1.jpg"></a>
+                        <div class="img-footer-child">
+                            <a href="#"> <img src="./assets/img/footer-1.jpg"></a>
                             <a href="#"><img src="./assets/img/footer-2.jpg"></a>
                             <a href="#"><img src="./assets/img/footer-3.jpg"></a>
                         </div>
@@ -506,9 +555,9 @@
                             <a href="#"><img src="./assets/img/footer-6.jpg"></a>
                         </div>
                     </div>
-        
+
                 </div>
-        
+
             </div>
         </div>
     </div>
@@ -519,8 +568,33 @@
             <a href=" #" title="Mona Media"><strong>Mona Media</strong></a>
         </div>
     </div>
+</div>
 
-</div> 
-
+<!-- Khung đăng nhập -->
+<div class="login-container">
+    <i class="fas fa-times" id="login-close"></i>
+    <form action="">
+        <h3>Đăng Nhập</h3>
+        <input type="email" class="box" placeholder="Nhập Email của bạn" required>
+        <input type="password" class="box" placeholder="Mật Khẩu" required>
+        <input type="submit" value="Đăng Nhập" class="btn-login ">
+        <div class="login-container_help">
+            <div class="login-container_social">
+                <div class="social-item_facebook">
+                    <i class="fab fa-facebook"></i>
+                    <a class="social-text">Đăng Nhập bằng Facebook</a>
+                </div>
+                <div class="social-item_twitter">
+                    <i class="fab fa-twitter"></i>
+                    <a class="social-text">Đăng Nhập bằng Twitter</a>
+                </div>
+            </div>
+            <div class="login-container_help-link">
+                <a href="#" class="login-container_help-link">Quên Mật Khẩu</a>
+                <a href="#" class="login-container_help-link">Cần Trợ Giúp</a>
+            </div>
+        </div>
+    </form>
+</div>
 
 </html>
