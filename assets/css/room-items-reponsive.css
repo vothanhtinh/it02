@@ -28,7 +28,7 @@
     div.thumb img{
         height: 65px;
     }
-    form{
+    .content-room form{
         width: 335px;
         margin-right: 0;
         margin-bottom: 20px;
@@ -121,7 +121,7 @@
         height: 430px;
     }
     
-    form{
+    .content-room form{
         width: 400px;
         margin-right: 0;
         margin-bottom: 20px;
@@ -159,7 +159,7 @@
     div.rooms{
         margin-left: 10px;
     }
-    form{
+    .content-room form{
         margin-right: 10px;
     }
 

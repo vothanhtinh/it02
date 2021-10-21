@@ -968,6 +968,7 @@ div#gototop:hover{
     transform: translateX(-100%);
     opacity: 1;
     transition: transform linear 0.2s;
+    overflow: overlay;
 }
 .nav__mobile .input-search{
     align-items: center;
@@ -1037,11 +1038,11 @@ div#gototop:hover{
     padding: 20px 5px;
 }
 .nav__mobile-close{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     position: absolute;
     color: #666;
     top: 1rem;
-    right: 1rem;
+    right: 2rem;
 
 }
 .nav-input:checked ~.nav__overlay{
@@ -1069,7 +1070,6 @@ div#gototop:hover{
 /* KHung Đăng Nhập */
 .login-container {
     background-color: rgba(0, 0, 0, 0.3);
-    
     z-index: 999999999999;
     position: fixed;
     top: 0;
@@ -1090,9 +1090,11 @@ div#gototop:hover{
 }
 .login-container> form {
     margin: 10% auto;
-    padding: 24px 32px;
     border-radius: 8px;
-    width: 800px;
+    width: 300px;
+    height: 450px;
+    margin-top: 100px;
+    padding: 10px 10px;
     background-color: #fff;
 
    

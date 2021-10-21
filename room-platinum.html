@@ -65,6 +65,33 @@
                     scrollTop: 0
                 }, 500);
             })
+            // khung đăng nhập
+
+            $(".login-container").hide()
+            $(".button-login").click(function () {
+                $(".login-container").css({
+                    "display": "block",
+                    "z-index": 999999999,
+                });
+
+            })
+            $("#login-close").click(function () {
+                $(".login-container").css({
+                    "display": "none",
+                })
+                $(".nav__mobile").css({
+                    "display": "block",
+                })
+            })
+        })
+    </script>
+    <script>
+        $(document).ready(function () {
+            $(".nav__mobile-link").click(function () {
+                $(".nav__mobile").css({
+                    "display": "none",
+                })
+            })
         })
     </script>
     <script>
@@ -113,7 +140,7 @@
                 <li><a href="https://vothanhtinh.github.io/it02/room.html" class="nav__mobile-link">Phòng</a></li>
                 <li><a href="https://vothanhtinh.github.io/it02/news.html" class="nav__mobile-link">Tin Tức </a></li>
                 <li><a href="https://vothanhtinh.github.io/it02/contact.html" class="nav__mobile-link">Liên hệ</a></li>
-                <li><a href="#" class="nav__mobile-link">Đăng Nhập</a></li>
+                <li> <button class="button-login  nav__mobile-link"> Đăng Nhập</button></li>
                 <div class="nav__mobile-list-icon">
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                     <a href="#"><i class="fab fa-instagram-square"></i></a>
@@ -307,6 +334,31 @@
     </div>
 
 </div>
-
+<!-- Khung đăng nhập -->
+<div class="login-container">
+    <i class="fas fa-times" id="login-close"></i>
+    <form action="">
+        <h3>Đăng Nhập</h3>
+        <input type="email" class="box" placeholder="Nhập Email của bạn" required>
+        <input type="password" class="box" placeholder="Mật Khẩu" required>
+        <input type="submit" value="Đăng Nhập" class="btn-login ">
+        <div class="login-container_help">
+            <div class="login-container_social">
+                <div class="social-item_facebook">
+                    <i class="fab fa-facebook"></i>
+                    <a class="social-text">Đăng Nhập bằng Facebook</a>
+                </div>
+                <div class="social-item_twitter">
+                    <i class="fab fa-twitter"></i>
+                    <a class="social-text">Đăng Nhập bằng Twitter</a>
+                </div>
+            </div>
+            <div class="login-container_help-link">
+                <a href="#" class="login-container_help-link">Quên Mật Khẩu</a>
+                <a href="#" class="login-container_help-link">Cần Trợ Giúp</a>
+            </div>
+        </div>
+    </form>
+</div>
 
 </html>

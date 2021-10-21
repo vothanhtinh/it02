@@ -15,15 +15,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-   
+
     <!-- wow -->
-    <link rel="stylesheet" href="./assets/css/animate.css"> 
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <script src="./assets/js/wow.min.js"></script>
     <script type="text/javascript">
         new WOW().init();
     </script>
-   
-    
+
+
     <script>
         $(document).ready(function () {
             $(window).scroll(function () {
@@ -36,6 +36,7 @@
                             "z-index": 999999
                         }
                     );
+                    
                 }
                 else {
                     $('#header').css(
@@ -65,9 +66,51 @@
                     scrollTop: 0
                 }, 500);
             })
+            // khung đăng nhập
+    
+            $(".login-container").hide()
+            $(".button-login").click(function(){
+                $(".login-container").css({
+                    "display":"block",
+                    "z-index":999999999,
+                });
+                
+            })
+            $("#login-close").click(function(){
+                $(".login-container").css({
+                    "display":"none",
+                })
+                $(".nav__mobile").css({
+                    "display":"block",
+                })
+            })
         })
     </script>
-
+    <!-- đóng -->
+    <script>
+        $(document).ready(function(){
+            $(".nav__mobile-link").click(function(){
+                $(".nav__mobile").css({
+                    "display":"none",
+                })
+            })
+        })
+    </script>
+    <script>
+        function search() {
+            var k = document.getElementById("kw")
+            if (k != null) {
+                k = k.value
+                var rooms = document.querySelectorAll("div.room-child")
+            }
+            for (var i = 0; i < rooms.length; i++) {
+                var h2 = rooms[i].getElementsByTagName("h2")[0].innerText
+                if (h2.indexOf(k) >= 0) {
+                    rooms[i].style.outline = "2px dashed gold";
+                }
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -96,17 +139,17 @@
         <label for="nav-mobile-input" class="nav__overlay"></label>
         <div class="nav__mobile">
             <div class="input-search">
-                <input class="timkiem" type="text" placeholder="Tìm kiếm.....">
-                <i class="fas fa-search"></i>
+                <input class="timkiem" type="text" id="kw" placeholder="Tìm kiếm.....">
+                <i class="fas fa-search" id="btnSearch" onclick="search()"></i>
             </div>
             <ul class="nav__mobile-list">
-                <li><a href="https://vothanhtinh.github.io/it02/index.html" class="nav__mobile-link">Trang Chủ</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/introduce.html" class="nav__mobile-link">Giới thiệu</a>
+                <li><a href="index.html" class="nav__mobile-link">Trang Chủ</a></li>
+                <li><a href="introduce.html" class="nav__mobile-link">Giới thiệu</a>
                 </li>
-                <li><a href="https://vothanhtinh.github.io/it02/room.html" class="nav__mobile-link">Phòng</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/news.html" class="nav__mobile-link">Tin Tức </a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/contact.html" class="nav__mobile-link">Liên hệ</a></li>
-                <li><a href="#" class="nav__mobile-link">Đăng Nhập</a></li>
+                <li><a href="room.html" class="nav__mobile-link">Phòng</a></li>
+                <li><a href="news.html" class="nav__mobile-link">Tin Tức </a></li>
+                <li><a href="contact.html" class="nav__mobile-link">Liên hệ</a></li>
+                <li> <button class="button-login nav__mobile-link"> Đăng Nhập</button></li>
                 <div class="nav__mobile-list-icon">
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                     <a href="#"><i class="fab fa-instagram-square"></i></a>
@@ -124,23 +167,23 @@
         </div>
         <div class="header-right">
             <ul id="nav">
-                <li><a href="https://vothanhtinh.github.io/it02/index.html">Trang Chủ</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/introduce.html">Giới Thiệu</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/room.html">Phòng</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/news.html">Tin Tức</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/contact.html"> Liên Hệ</a></li>
+                <li><a href="index.html">Trang Chủ</a></li>
+                <li><a href="introduce.html">Giới Thiệu</a></li>
+                <li><a href="room.html">Phòng</a></li>
+                <li><a href="news.html">Tin Tức</a></li>
+                <li><a href="contact.html"> Liên Hệ</a></li>
             </ul>
             <div class="search">
                 <i class="search-header fas fa-search">
                     <div id="input-search">
-                        <input class="timkiem" type="text" placeholder="Tìm kiếm.....">
-                        <i class="fas fa-search"></i>
+                        <input class="timkiem" id="kw" type="text" placeholder="Tìm kiếm.....">
+                        <i class="fas fa-search" id="btnSearch" onclick="search()"></i>
                     </div>
                 </i>
             </div>
 
             <button type="button" class="btn ">
-                <a href="https://vothanhtinh.github.io/it02/room.html"> <span>ĐẶT PHÒNG</span> </a>
+                <a href="room.html"> <span>ĐẶT PHÒNG</span> </a>
             </button>
 
         </div>
@@ -160,13 +203,13 @@
                 <div class="img">
                     <img src="./assets/img/roomsilver.jpg" alt="roomsilver">
                 </div>
-    
+
                 <h2>SILVER ROOM</h2>
                 <div class="hollow"></div>
                 <div class="room-price">
                     <h3>Giá: <b>50$</b>/1 đêm</h3>
                     <button type="button" class="btn">
-                        <a href="https://vothanhtinh.github.io/it02/room-silver.html"> Xem Chi Tiết </a>
+                        <a href="room-silver.html"> Xem Chi Tiết </a>
                     </button>
                 </div>
             </div>
@@ -174,13 +217,13 @@
                 <div class="img">
                     <img src="./assets/img/roomplatinum.jpg" alt="roomplatinum">
                 </div>
-    
+
                 <h2>PLATINUM ROOM</h2>
                 <div class="hollow"></div>
                 <div class="room-price">
                     <h3>Giá: <b>80$</b>/1 đêm</h3>
                     <button type="button" class="btn">
-                        <a href="https://vothanhtinh.github.io/it02/room-platinum.html">Xem Chi Tiết</span> </a>
+                        <a href="room-platinum.html">Xem Chi Tiết</span> </a>
                     </button>
                 </div>
             </div>
@@ -188,63 +231,64 @@
                 <div class="img">
                     <img src="./assets/img/roombronze.jpg" alt="roombronze">
                 </div>
-    
+
                 <h2>BRONZE ROOM</h2>
                 <div class="hollow"></div>
                 <div class="room-price">
                     <h3>Giá: <b>40$</b>/1 đêm</h3>
                     <button type="button" class="btn">
-                        <a href="https://vothanhtinh.github.io/it02/room-bronze.html"> <span>Xem Chi Tiết</span> </a>
+                        <a href="hroom-bronze.html"> <span>Xem Chi Tiết</span> </a>
                     </button>
                 </div>
             </div>
         </div>
         <div class="rooms">
-            <div class="room-child wow rotateInDownLeft" data-wow-duration="2s" >
+            <div class="room-child wow rotateInDownLeft" data-wow-duration="2s">
                 <div class="img">
                     <img src="./assets/img/room-img/standard-room.webp" alt="roomsilver">
                 </div>
-    
+
                 <h2>STANDARD ROOM</h2>
                 <div class="hollow"></div>
                 <div class="room-price">
                     <h3>Giá: <b>20$</b>/ 1 đêm</h3>
                     <button type="button" class="btn">
-                        <a href="https://vothanhtinh.github.io/it02/room-standard.html"> Xem Chi Tiết </a>
+                        <a href="room-standard.html"> Xem Chi Tiết </a>
                     </button>
                 </div>
             </div>
-            <div class="room-child wow rotateInDownLeft" data-wow-duration="2s" >
+            <div class="room-child wow rotateInDownLeft" data-wow-duration="2s">
                 <div class="img">
                     <img src="./assets/img/room-img/superior-room.webp" alt="roomplatinum">
                 </div>
-    
+
                 <h2>SUPERIOR ROOM</h2>
                 <div class="hollow"></div>
                 <div class="room-price">
                     <h3>Giá: <b>70$</b>/1 đêm</h3>
                     <button type="button" class="btn">
-                        <a href="https://vothanhtinh.github.io/it02/room-superior.html">Xem Chi Tiết</span> </a>
+                        <a href="room-superior.html">Xem Chi Tiết</span> </a>
                     </button>
                 </div>
             </div>
-            <div class="room-child wow rotateInDownLeft" data-wow-duration="2s" >
+            <div class="room-child wow rotateInDownLeft" data-wow-duration="2s">
                 <div class="img">
                     <img src="./assets/img/room-img/juniorsuite-room.webp" alt="roombronze">
                 </div>
-    
+
                 <h2>JUNIOR SUITE ROOM</h2>
                 <div class="hollow"></div>
                 <div class="room-price">
                     <h3>Giá: <b>100$</b>/1 đêm</h3>
                     <button type="button" class="btn">
-                        <a href="https://vothanhtinh.github.io/it02/room-juniorsuite.html"> <span>Xem Chi Tiết</span> </a>
+                        <a href="room-juniorsuite.html"> <span>Xem Chi Tiết</span>
+                        </a>
                     </button>
                 </div>
             </div>
         </div>
     </section>
-    
+
 
 
 </body>
@@ -300,11 +344,11 @@
                     <h5>liên kết</h5>
                     <div class="hollow"></div>
                     <ul>
-                        <li><a href="https://vothanhtinh.github.io/it02/index.html">Trang chủ</a> </li>
-                        <li><a href="https://vothanhtinh.github.io/it02/introduce.html">Giới Thiệu</a></li>
-                        <li><a href="https://vothanhtinh.github.io/it02/room.html">Phòng</a></li>
-                        <li><a href="https://vothanhtinh.github.io/it02/news.html">Tin Tức</a></li>
-                        <li><a href="https://vothanhtinh.github.io/it02/contact.html"> Liên Hệ</a></li>
+                        <li><a href="index.html">Trang chủ</a> </li>
+                        <li><a href="introduce.html">Giới Thiệu</a></li>
+                        <li><a href="room.html">Phòng</a></li>
+                        <li><a href="news.html">Tin Tức</a></li>
+                        <li><a href="contact.html"> Liên Hệ</a></li>
                     </ul>
                     <button class="btn btn-warning">ĐẶT PHÒNG</button>
                 </div>
@@ -342,6 +386,31 @@
     </div>
 
 </div>
-
+<!-- Khung đăng nhập -->
+<div class="login-container">
+    <i class="fas fa-times" id="login-close"></i>
+    <form action="">
+        <h3>Đăng Nhập</h3>
+        <input type="email" class="box" placeholder="Nhập Email của bạn" required>
+        <input type="password" class="box" placeholder="Mật Khẩu" required>
+        <input type="submit" value="Đăng Nhập" class="btn-login ">
+        <div class="login-container_help">
+            <div class="login-container_social">
+                <div class="social-item_facebook">
+                    <i class="fab fa-facebook"></i>
+                    <a class="social-text">Đăng Nhập bằng Facebook</a>
+                </div>
+                <div class="social-item_twitter">
+                    <i class="fab fa-twitter"></i>
+                    <a class="social-text">Đăng Nhập bằng Twitter</a>
+                </div>
+            </div>
+            <div class="login-container_help-link">
+                <a href="#" class="login-container_help-link">Quên Mật Khẩu</a>
+                <a href="#" class="login-container_help-link">Cần Trợ Giúp</a>
+            </div>
+        </div>
+    </form>
+</div>
 
 </html>

@@ -15,15 +15,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-   
+
     <!-- wow -->
-    <link rel="stylesheet" href="./assets/css/animate.css"> 
+    <link rel="stylesheet" href="./assets/css/animate.css">
     <script src="./assets/js/wow.min.js"></script>
     <script type="text/javascript">
         new WOW().init();
     </script>
-   
-    
+
+
     <script>
         $(document).ready(function () {
             $(window).scroll(function () {
@@ -65,13 +65,41 @@
                     scrollTop: 0
                 }, 500);
             })
+            // khung đăng nhập
+
+            $(".login-container").hide()
+            $(".button-login").click(function () {
+                $(".login-container").css({
+                    "display": "block",
+                    "z-index": 999999999,
+                });
+
+            })
+            $("#login-close").click(function () {
+                $(".login-container").css({
+                    "display": "none",
+                })
+                $(".nav__mobile").css({
+                    "display": "block",
+                })
+            })
+        })
+    </script>
+    <!-- tự động đóng  -->
+    <script>
+        $(document).ready(function () {
+            $(".nav__mobile-link").click(function () {
+                $(".nav__mobile").css({
+                    "display": "none",
+                })
+            })
         })
     </script>
     <script>
-        function changImage( obj){
-            var path=obj.src
-            var img= document.getElementById("mainImg")
-            img.src= path
+        function changImage(obj) {
+            var path = obj.src
+            var img = document.getElementById("mainImg")
+            img.src = path
         }
     </script>
 
@@ -113,7 +141,7 @@
                 <li><a href="https://vothanhtinh.github.io/it02/room.html" class="nav__mobile-link">Phòng</a></li>
                 <li><a href="https://vothanhtinh.github.io/it02/news.html" class="nav__mobile-link">Tin Tức </a></li>
                 <li><a href="https://vothanhtinh.github.io/it02/contact.html" class="nav__mobile-link">Liên hệ</a></li>
-                <li><a href="#" class="nav__mobile-link">Đăng Nhập</a></li>
+                <li> <button class="button-login  nav__mobile-link"> Đăng Nhập</button></li>
                 <div class="nav__mobile-list-icon">
                     <a href="#"><i class="fab fa-facebook-square"></i></a>
                     <a href="#"><i class="fab fa-instagram-square"></i></a>
@@ -164,11 +192,12 @@
         </div>
         <div class="content-room">
             <div class="rooms">
-                <img src="./assets/img/roombronze.jpg"  id="mainImg" alt="roomsilver">
+                <img src="./assets/img/roombronze.jpg" id="mainImg" alt="roomsilver">
                 <div class="thumb">
-                    <div><img src="./assets/img/roomplatinum.jpg"  onclick="changImage(this)" alt="1"></div>
+                    <div><img src="./assets/img/roomplatinum.jpg" onclick="changImage(this)" alt="1"></div>
                     <div><img src="./assets/img/roomsilver.jpg" onclick="changImage(this)" alt="2"></div>
-                    <div><img src="./assets/img/room-img/juniorsuite-room.webp" onclick="changImage(this)" alt="3"></div>
+                    <div><img src="./assets/img/room-img/juniorsuite-room.webp" onclick="changImage(this)" alt="3">
+                    </div>
                     <div><img src="./assets/img/room-img/superior-room.webp" onclick="changImage(this)" alt="4"></div>
                     <div><img src="./assets/img/room-img/standard-room.webp" onclick="changImage(this)" alt="5"></div>
                 </div>
@@ -176,11 +205,18 @@
                     <h1>Bronze Room</h1>
                     <p class="price"><span>40$</span> / đêm</p>
                     <p class="content-text-room">
-                        Bắt đầu hoạt động từ tháng 5 năm 2004, Mona Media Resort, Mũi Né, Phan Thiết tạo nên sự khác biệt trên nhiều phương diện. Đây là khu nghỉ dưỡng duy nhất tại Việt Nam cung cấp chương trình “Tất cả trong một”, Tiệc phô mai và rượu đãi khách miễn phí, Các bài hát vui tươi, sôi động do hai ban nhạc của khu nghỉ dưỡng trình bày và chương trình Dạo bộ Làng Chài và Chợ Mũi Né hàng ngày. Khác với các khu nghỉ dưỡng khác dọc theo bờ biển Phan Thiết, Mona Media Resort đủ điều kiện để giúp bạn tận hưởng những phút giây thư giãn thoải mái, lấy lại năng lượng sau khoảng thời gian làm việc vất vả.
+                        Bắt đầu hoạt động từ tháng 5 năm 2004, Mona Media Resort, Mũi Né, Phan Thiết tạo nên sự khác
+                        biệt trên nhiều phương diện. Đây là khu nghỉ dưỡng duy nhất tại Việt Nam cung cấp chương trình
+                        “Tất cả trong một”, Tiệc phô mai và rượu đãi khách miễn phí, Các bài hát vui tươi, sôi động do
+                        hai ban nhạc của khu nghỉ dưỡng trình bày và chương trình Dạo bộ Làng Chài và Chợ Mũi Né hàng
+                        ngày. Khác với các khu nghỉ dưỡng khác dọc theo bờ biển Phan Thiết, Mona Media Resort đủ điều
+                        kiện để giúp bạn tận hưởng những phút giây thư giãn thoải mái, lấy lại năng lượng sau khoảng
+                        thời gian làm việc vất vả.
                     </p>
                 </div>
             </div>
-            <form action="https://vothanhtinh.github.io/it02/room-bronze.html" class="wow fadeInRight" data-wow-duration="2s">
+            <form action="https://vothanhtinh.github.io/it02/room-bronze.html" class="wow fadeInRight"
+                data-wow-duration="2s">
                 <h1 class="title-form">Đặt phòng</h1>
                 <div class="form-group">
                     <label for="pwd" class="name">Họ & Tên</label>
@@ -203,13 +239,14 @@
                     <input type="text" placeholder="  __" required>
                 </div>
                 <div id="btn-form">
-                    <input type="submit" value="Gửi" style="background-color: #000; color: #fff; width: 200px; border: none;">
-        
+                    <input type="submit" value="Gửi"
+                        style="background-color: #000; color: #fff; width: 200px; border: none;">
+
                 </div>
         </div>
 
     </section>
-    
+
 
 
 </body>
@@ -307,6 +344,34 @@
     </div>
 
 </div>
+<section>
+<!-- Khung đăng nhập -->
+<div class="login-container">
+    <i class="fas fa-times" id="login-close"></i>
+    <form action="">
+        <h3>Đăng Nhập</h3>
+        <input type="email" class="box" placeholder="Nhập Email của bạn" required>
+        <input type="password" class="box" placeholder="Mật Khẩu" required>
+        <input type="submit" value="Đăng Nhập" class="btn-login ">
+        <div class="login-container_help">
+            <div class="login-container_social">
+                <div class="social-item_facebook">
+                    <i class="fab fa-facebook"></i>
+                    <a class="social-text">Đăng Nhập bằng Facebook</a>
+                </div>
+                <div class="social-item_twitter">
+                    <i class="fab fa-twitter"></i>
+                    <a class="social-text">Đăng Nhập bằng Twitter</a>
+                </div>
+            </div>
+            <div class="login-container_help-link">
+                <a href="#" class="login-container_help-link">Quên Mật Khẩu</a>
+                <a href="#" class="login-container_help-link">Cần Trợ Giúp</a>
+            </div>
+        </div>
+    </form>
+</div>
 
+</section>
 
 </html>
