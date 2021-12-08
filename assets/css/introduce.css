@@ -367,6 +367,8 @@ div.search:hover #input-search {
 .service-left-list p:hover {
     color: gold;
     cursor: pointer;
+    transform: translateX(15px);
+    transition: 0.5s;
 }
 
 .service-right {
