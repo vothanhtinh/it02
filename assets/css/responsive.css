@@ -1,17 +1,20 @@
 /*Smart phone nhỏ*/
 @media all and (min-width:320px)and (max-width: 480px) {
-    .img_logo{
+    .img_logo {
         width: 200px;
-            margin:auto;
-        
+        margin: auto;
+        padding-top: 15px;
     }
-    #header{
+
+    #header {
         padding-left: 25px;
         opacity: 1 !important;
     }
-    .event h5{
+
+    .event h5 {
         font-size: 17px;
-    }  
+    }
+
     .form-set-room form {
         top: 41px;
         position: relative;
@@ -20,274 +23,342 @@
         margin: 0 auto;
         right: 0;
     }
-    .img_logo img{
+
+    .img_logo img {
         width: 200px;
         padding-top: 15px;
     }
+
     label {
         padding: 0px 0;
     }
+
     div.subtext p {
         padding: 5px 5px;
         text-align: center;
     }
+
     .content-item-1 {
         margin-top: -40px;
     }
-    .content-item-1>.text-1>h1{
+
+    .content-item-1>.text-1>h1 {
         font-size: 30px;
     }
-    div.items{
+
+    div.items {
         flex-direction: column;
         align-items: center;
     }
+
     div.item-1 {
         padding: 0 5px;
     }
+
     div.item-1:first-child {
         margin-left: 15px;
     }
+
     div.item-1:last-child {
         margin-right: 15px;
     }
-    div.item-1 p{
+
+    div.item-1 p {
         margin-left: 20%;
     }
-    .content-item-2 .text-2{
+
+    .content-item-2 .text-2 {
         flex-direction: column;
         margin-left: 10px;
         align-items: center;
     }
+
     .content-item-2 h2 {
         font-size: 25px;
     }
-    .content-item-2 .text-2 button{
+
+    .content-item-2 .text-2 button {
         margin-left: 70px;
     }
-    
+
     div.rooms {
         margin: 50px 0px;
     }
+
     div.rooms:first-child {
         margin-left: 0px;
     }
+
     div.rooms:last-child {
         margin-right: 0px;
     }
-    div.room h3{
+
+    div.room h3 {
         font-size: 20px;
     }
+
     .text-background {
         top: 15%;
         left: 3%;
         text-align: center;
     }
-    div.counter-item .counter{
+
+    div.counter-item .counter {
         font-size: 40px;
         padding: 0 40px;
         justify-content: space-evenly;
     }
-    div.counter-item h3{
+
+    div.counter-item h3 {
         font-size: 22px;
-      text-align: center;
+        text-align: center;
     }
+
     .counter-content {
         flex-wrap: wrap;
         padding: 0 0;
     }
-    .new-left{
+
+    .new-left {
         flex-direction: column;
         height: 1530px;
     }
-    .new-item{
+
+    .new-item {
         flex-direction: column;
     }
+
     div.sub:first-child {
         margin-left: 15px;
     }
-    .new-right{
+
+    .new-right {
         margin-right: 0;
         margin: 0 0;
     }
+
     .footer-item-list>.logo-footer {
         width: 170px;
     }
+
     .footer-item {
         flex-wrap: wrap;
         padding: 5px 0;
     }
+
     .footer-item-list {
         width: 99%;
         margin-left: 20px;
     }
-    .footer-item-list:first-child{
+
+    .footer-item-list:first-child {
         margin-left: 40px;
     }
+
     /* khung đăng nhập */
-    .login-container form{
+    .login-container form {
         width: 300px;
         height: 450px;
         margin-top: 100px;
         padding: 10px 10px;
     }
-    .login-container_help{
+
+    .login-container_help {
         flex-direction: column;
         align-items: center;
         margin-top: 30px;
     }
-    .login-container_help-link{
+
+    .login-container_help-link {
         font-size: 14px;
         margin-top: 20px;
     }
- }
+}
+
 @media all and (min-width: 480px) and (max-width: 768px) {
-    #header{
+    #header {
         opacity: 1 !important;
     }
-    .img_logo{
+
+    .img_logo {
         margin-left: 25%;
     }
-    .form-set-room form{
+
+    .form-set-room form {
         position: relative;
         top: 50px;
         margin: 0 auto;
         right: 0;
     }
+
     div.items {
         flex-direction: column;
         align-items: center;
     }
-    div.item-1 p{
+
+    div.item-1 p {
         margin-left: 125px;
     }
+
     div.item-1:first-child {
         margin-left: 15px;
     }
+
     div.item-1:last-child {
         margin-right: 15px;
     }
-    .content-item-2 .text-2{
+
+    .content-item-2 .text-2 {
         flex-direction: column;
         align-items: center;
     }
+
     .content-item-2 h2 {
         font-size: 25px;
     }
+
     div.subtext {
-    margin-left: 30px;
-}
-    .content-item-2 .text-2 button{
+        margin-left: 30px;
+    }
+
+    .content-item-2 .text-2 button {
         margin-left: 70px;
     }
+
     .content-item-2 .text-2 {
         margin-left: 0px;
     }
-    
+
     div.rooms {
         margin: 50px 0px;
     }
+
     div.rooms:first-child {
         margin-left: 0px;
     }
+
     div.rooms:last-child {
         margin-right: 0px;
     }
+
     .text-background {
         top: 15%;
         left: 2%;
         text-align: center;
     }
-    div.counter-item .counter{
+
+    div.counter-item .counter {
         font-size: 40px;
         padding: 0 40px;
         justify-content: space-evenly;
     }
-    div.counter-item h3{
+
+    div.counter-item h3 {
         font-size: 22px;
-      text-align: center;
+        text-align: center;
     }
+
     .counter-content {
         flex-wrap: wrap;
         padding: 0 75px;
     }
-    .new-left{
+
+    .new-left {
         flex-direction: column;
         height: 1530px;
         margin-left: 75px;
         margin-right: 75px;
     }
-    .text-news h3{
+
+    .text-news h3 {
         margin-left: 90px;
     }
-    .new-item{
+
+    .new-item {
         flex-direction: column;
     }
+
     div.sub:first-child {
         margin-left: 15px;
     }
-    .new-right{
+
+    .new-right {
         margin-right: 0;
         margin: 0 0;
     }
+
     .footer-item-list>.logo-footer {
         width: 170px;
     }
+
     .footer-item {
         flex-wrap: wrap;
         padding: 5px 0;
     }
+
     .footer-item-list {
         width: 99%;
         margin-left: 20px;
     }
-    .footer-item-list:first-child{
+
+    .footer-item-list:first-child {
         margin-left: 40px;
     }
 
     /*Khung đăng nhập  */
-    .login-container form{
+    .login-container form {
         width: 480px;
         height: 500px;
         margin-top: 100px;
         padding: 10px 10px;
     }
-    .login-container_help{
+
+    .login-container_help {
         flex-direction: column;
         align-items: center;
         margin-top: 60px;
         font-size: 18px;
     }
-    .social-item_twitter{
+
+    .social-item_twitter {
         margin-top: 10px;
     }
-    .login-container_help-link{
+
+    .login-container_help-link {
         font-size: 18px;
         margin-top: 20px;
     }
 }
+
 @media all and (min-width: 769px) and (max-width: 1023px) {
-    
-    #header{
+
+    #header {
         padding-left: 20px;
         padding-right: 20px;
         opacity: 1 !important;
     }
-    .main{
+
+    .main {
         margin: 0 20px;
     }
+
     .img_logo {
         width: 20%;
     }
-    .img_logo img{
+
+    .img_logo img {
         width: 255px;
     }
-    .header-right{
+
+    .header-right {
         width: 100%;
     }
-    #input-search{
+
+    #input-search {
         right: 70px;
     }
-    .form-set-room form{
+
+    .form-set-room form {
         position: relative;
         top: 25px;
         width: 400px;
@@ -295,113 +366,144 @@
         right: 0;
         margin-left: 30%;
     }
+
     .title-form {
         margin-top: 5px;
     }
-    form label{
+
+    form label {
         margin-bottom: 0;
     }
+
     div.item-1:first-child {
         margin-left: 25px;
     }
+
     div.item-1:last-child {
         margin-right: 25px;
     }
-    div.items{
+
+    div.items {
         flex-wrap: wrap;
     }
-    div.rooms{
+
+    div.rooms {
         flex: none;
         width: 42%;
     }
+
     div.rooms img {
         height: 250px;
     }
+
     div.room button {
         margin-right: 20px;
     }
-    div.room h3{
+
+    div.room h3 {
         font-size: 22px;
-        }
-    div.room h3 b{
+    }
+
+    div.room h3 b {
         font-size: 20px;
     }
-    div.sub > .sub-img img {
+
+    div.sub>.sub-img img {
         height: 170px;
         width: 352px;
     }
-    div.rooms:last-child{
-        margin-left: 65px  ;
+
+    div.rooms:last-child {
+        margin-left: 65px;
     }
-    .text-background{
+
+    .text-background {
         top: 20%;
         left: 7%;
     }
-    .new-left{
+
+    .new-left {
         flex-wrap: wrap;
         height: 1000px;
     }
-    .new-right{
+
+    .new-right {
         width: 305px;
         height: 375px;
     }
+
     .event-list img {
         width: 200px;
         height: 100px;
     }
+
     div.sub:first-child {
         margin-left: 25px;
     }
-    div.sub:last-child{
+
+    div.sub:last-child {
         margin-right: 25px;
     }
-    .event{
+
+    .event {
         margin-bottom: 35px;
         padding-top: 10px;
     }
-    .event h5{
+
+    .event h5 {
         font-size: 16px;
         font-weight: 600;
         line-height: 1.4;
         padding: 0 20px;
     }
+
     .new-right h3 {
         margin-top: -64px;
         margin-bottom: 38px;
     }
-    .footer-item{
+
+    .footer-item {
         flex-wrap: wrap;
     }
+
     .img-child .img-footer img {
-            width: 70px;
-        }
+        width: 70px;
+    }
+
     .img-child {
-            padding: 5px 12px 0 20px;
-        }
+        padding: 5px 12px 0 20px;
+    }
+
     .footer-item-list {
-            width: 45%;
-            margin-left: 25px;
-        }
-        /*Khung đăng nhập  */
-    .login-container form{
+        width: 45%;
+        margin-left: 25px;
+    }
+
+    /*Khung đăng nhập  */
+    .login-container form {
         width: 740px;
     }
 }
+
 @media all and (min-width: 1024px) and (max-width: 1280px) {
-    #header{
+    #header {
         padding-left: 20px;
         padding-right: 20px;
     }
-    .main{
+
+    .main {
         margin: 0 20px;
     }
-    .header-right{
+
+    .header-right {
         width: 100%;
     }
-    #input-search{
+
+    #input-search {
         right: 70px;
     }
-    .form-set-room form{
+
+    .form-set-room form {
         position: relative;
         top: 25px;
         width: 310px;
@@ -409,96 +511,120 @@
         right: 0;
         margin-left: 680px;
     }
+
     .title-form {
         margin-top: 5px;
     }
-    form label{
+
+    form label {
         margin-bottom: 0;
     }
+
     div.item-1:first-child {
         margin-left: 25px;
     }
+
     div.item-1:last-child {
         margin-right: 25px;
     }
+
     div.rooms:first-child {
         margin-left: 20px;
     }
+
     div.rooms:last-child {
         margin-right: 20px;
     }
+
     div.rooms img {
         height: 250px;
     }
+
     div.room button {
         margin-right: 20px;
     }
-    div.room h3{
+
+    div.room h3 {
         font-size: 22px;
-        }
-    div.room h3 b{
+    }
+
+    div.room h3 b {
         font-size: 20px;
     }
-    div.sub > .sub-img img {
+
+    div.sub>.sub-img img {
         height: 170px;
         width: 300px;
     }
-    .new-right{
+
+    .new-right {
         width: 305px;
         height: 370px;
     }
+
     .event-list img {
         width: 130px;
         height: 75px;
     }
+
     div.sub:first-child {
         margin-left: 25px;
     }
-    div.sub:last-child{
+
+    div.sub:last-child {
         margin-right: 25px;
     }
-    .event{
+
+    .event {
         margin-bottom: 35px;
         padding-top: 10px;
     }
-    .event h5{
+
+    .event h5 {
         font-size: 16px;
         font-weight: 600;
         line-height: 1.4;
         padding: 0 20px;
     }
+
     .new-right h3 {
         margin-top: -64px;
         margin-bottom: 38px;
     }
+
     .img-child .img-footer img {
-            width: 70px;
-        }
+        width: 70px;
+    }
+
     .img-child {
-            padding: 5px 12px 0 20px;
-        }
+        padding: 5px 12px 0 20px;
+    }
+
     .footer-item-list {
-            width: 25%;
-            margin-left: 25px;
-        }
-           /*Khung đăng nhập  */
-    .login-container form{
+        width: 25%;
+        margin-left: 25px;
+    }
+
+    /*Khung đăng nhập  */
+    .login-container form {
         margin-top: 150px;
     }
- }
+}
 
 
 
 /* mobile */
-@media(max-width:950px){
-    .nav__bars-btn{
+@media(max-width:950px) {
+    .nav__bars-btn {
         display: block;
     }
-    .main{
+
+    .main {
         display: none;
     }
-    .header-right{
+
+    .header-right {
         display: none;
     }
-    
+
 }
