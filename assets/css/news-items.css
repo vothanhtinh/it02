@@ -22,6 +22,11 @@ h1,h2,h3,h4{
     color: #1c1c1c;
 }
 
+p{
+    font-weight: 200;
+    font-size: 20px;
+}
+
 a{
     color:inherit;
     text-transform: uppercase;
@@ -166,8 +171,15 @@ li{
 .follows{
     display: none;
 }
-
 /* content */
+
+input[type='submit']:hover, button[type='submit']:hover {
+    outline: none;
+    opacity: 1;
+    box-shadow: inset 0 0 0 100px rgb(0 0 0 / 20%);
+    color: #fff;
+    position: relative;
+}
 
 main{
  background-color: #fff;
@@ -321,19 +333,51 @@ button[type = 'submit']{
 }
 
 .grid-container {
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: block;
     padding-top: 0px;
     padding-left: 10px;
-    width: 90%;
+    width: 100%;
 }
   
 .grid-item {
     background-color: rgba(255, 255, 255, 0.8);
     width: 100%;
-    padding: 0 10px 40px 30px;
+    padding: 0 10px 40px 20px;
     font-size: 30px;
     text-align: center;
+}
+
+.tilte-grid{
+    padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.tilte-grid h6{
+   color: #888;
+   font-size: 14px;
+   margin-bottom: 1em;
+}
+
+.tilte-grid a:hover{
+    color: #000;
+    text-decoration: none;
+}
+
+.tilte-grid h1{
+    color: #000;
+    width: 100%;
+    margin-top: 0;
+    font-size: 1em;    
+}
+
+.entry-divider{
+    height: 3px;
+    display: block;
+    background-color: rgba(0,0,0,0.1);
+    margin: 1em 0 1em;
+    width: 100%;
+    max-width: 30px;
 }
 
 .type{
@@ -344,9 +388,9 @@ button[type = 'submit']{
     box-shadow: 5px 5px 5px #888;
 }
 
-.type p:hover{
-    color: #000;
-    font-weight: 400;
+.type img{
+    width: 100%;
+    height: 70vh;
 }
 
 .text-left{
@@ -354,76 +398,50 @@ button[type = 'submit']{
 }
 
 .box-text{
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-}
-
-.box-text h5{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: 2em;
-    line-height: 1;
-    margin-top: 0.8em;
-    margin-bottom: 0.8em;
-    font-size: 16px;
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: 1em;
+    padding-bottom: 0em;
+    height: 80vh;
 }
 
 .box-text p{
-    overflow: hidden;
-    text-overflow: ellipsis;
-    height: 4em;
+    height: 2em;
     color: #353535;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
 }
 
 .box-text p {
     margin-top: 0.1em;
     margin-bottom: 0.1em;
+    line-height: 2.5;
+    text-align: justify;
 }
 
-.box-text .diver{
-    margin-top: .5em;
-    margin-bottom: .5em;
-    height: 2px;
+.links-item ul{
+    list-style: none !important;
 }
 
-.diver{
-    display: block;
-    background-color: rgba(0,0,0,0.1);
-    margin: 1em 0 1em;
+.followsers i{
+   padding: 0px 10px;
+}
+
+.followsers i:hover{
+    color: #ffb606;
+}
+
+.comments-form>p {
+    padding: 10px 15px;
     width: 100%;
-    max-width: 30px;
 }
 
-.post-month{
-    font-size: .7em;
+.entry-content{
+    width: 100%;
 }
 
-.bg{
-    background-color: #ffb606;
-    width: 2.5em;
-    height: 2.5em;
-}
-
-.top-0{
-    top: -340px;
-}
-
-.left-10{
-    left: -20px;
-}
-
-.round{
-    border-radius: 50%;
-}
-
-.position-relative span{
-    color: #fff;
-}
-
-.is-xsmall{
-    font-size: 0.7em;
+.position{
+    position: absolute !important;
 }
 
 /* footer */
@@ -519,21 +537,15 @@ button[type = 'submit']{
     text-decoration: none;
 }
 
-.link-web{
+.light{
     text-transform: none;
+    font-size: 14px;
+    color: #000fff;
 }
 
-.link-web:hover{
+.light:hover{
     color: #000;
     text-decoration: none;
-}
-
-input[type='submit']:hover, button[type='submit']:hover {
-    outline: none;
-    opacity: 1;
-    box-shadow: inset 0 0 0 100px rgb(0 0 0 / 20%);
-    color: #fff;
-    position: relative;
 }
 
 .light-2 a{

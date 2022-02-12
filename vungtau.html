@@ -1,484 +1,329 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/news.css">
-    <link rel="stylesheet" href="./assets/css/support-reponsive.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-    <link rel="icon" href="./assets/img/logopage.png" type="image/x-icon" />
-    <link rel="stylesheet"
-        href="./assets/font/fontawesome-free-5.15.2-web (1)/fontawesome-free-5.15.2-web/css/all.min.css">
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com/%22%3E">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/fd35ec0b38.js" crossorigin="anonymous"></script>
+     <!-- shortcut icon -->
+     <link rel="shortcut icon" href="/images/favicon" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/news-items.css">
+    <link rel="stylesheet" href="./assets/css/news-items-reponsive.css">
     <title>Thành phố biển Vũng Tàu – Howello</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <!-- Slick -->
-
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <!-- wow -->
-    <link rel="stylesheet" href="./assets/css/animate.css"> 
-    <script src="./assets/js/wow.min.js"></script>
-    <script type="text/javascript">
-        new WOW().init();
-    </script>
-  
-    <script>
-        $(document).ready(function () {
-            $(window).scroll(function () {
-                if ($(this).scrollTop() >= 150) {
-                    $('#header').css(
-                        {
-                            "position": "fixed",
-                            "opacity": 0.8,
-                            "top": 0,
-                            "z-index": 999999
-                        }
-                    );
-                }
-                else {
-                    $('#header').css(
-                        {
-                            "position": "relative",
-                            "opacity": 1,
-                            "z-index": 99999
-                        }
-                    );
-
-                }
-
-            });
-        });
-        $(document).ready(function () {
-            $("#gototop").hide()
-
-            $(window).scroll(function () {
-                if ($(this).scrollTop() >= 200)
-                    $("#gototop").show("slow")
-                else
-                    $("#gototop").hide("slow")
-
-            })
-            $("#gototop").click(function () {
-                $("html, body").animate({
-                    scrollTop: 0
-                }, 500);
-            })
-        })
-    </script>
-
 </head>
-
 <body>
-    <div id="gototop">
-        <a href="javascript:;"><i class="fas fa-angle-up"></i></a>
-    </div>
-    <div class="main">
-        <div class="info-left">
+  <!-- Header  -->
+  <header id="home" class="header">
+    <nav class="main">
+        <div class="log container">
+        <div class="left">
             <i class="fas fa-phone"></i>
-            <a href="tel:076 922 0162">076 922 0162</a>
+            <a href="tel: 076 922 0162">076 922 0162</a>
             <i class="fas fa-envelope"></i>
             <a href="mailto:demonhunterg@gmail.com">demonhunterg@gmail.com</a>
         </div>
-        <div class="info-right">
-            <a href="#"><i class="fab fa-facebook-square"></i></a>
-            <a href="#"><i class="fab fa-instagram-square"></i></a>
-            <a href="#"><i class="fab fa-pinterest-square"></i></a>
-            <a href="#"><i class="fab fa-twitter-square"></i></a>
+        <div class="right">
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-twitter"></i></a>
+            <a href=""><i class="fab fa-pinterest"></i></a>
+            <a href=""><i class="fab fa-invision"></i></a>
         </div>
-    </div>
-    <div id="header">
-        <label for="nav-mobile-input" class="nav__bars-btn">
-            <i class="fas fa-bars"></i>
-        </label>
-        <input type="checkbox" hidden name="" class="nav-input" id="nav-mobile-input">
-        <label for="nav-mobile-input" class="nav__overlay"></label>
-        <div class="nav__mobile">
-            <div class="input-search">
-                <input class="timkiem" type="text" placeholder="Tìm kiếm.....">
-                <i class="fas fa-search"></i>
-            </div>
-            <ul class="nav__mobile-list">
-                <li><a href="https://vothanhtinh.github.io/it02/index.html" class="nav__mobile-link">Trang Chủ</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/introduce.html" class="nav__mobile-link">Giới thiệu</a>
+        </div>
+    </nav>
+    <nav class="nav">
+     <div class="log container">
+         <!-- Logo -->
+        <div class="logo">
+            <img src="./assets/img/logo.png" title="Howello">
+        </div>
+         <!-- Menu -->
+         <div class="menu">
+             <div class="top-menu">
+                 <div class="searchform">
+                     <form method="get" role="search">
+                         <div class="row-input">
+                                <!-- input -->
+                             <input type="search" placeholder="Tìm kiếm...">
+                            <!-- button -->
+                            <div class="icon-buttonsearch">
+                            <button type="submit">
+                                <i class="fas fa-search"></i>
+                            </button>
+                            </div>
+                         </div>
+                     </form>
+                 </div>
+                  <div class="close">
+                    <i class="fas fa-times"></i>
+                  </div>
+             </div>
+             <!-- list menu -->
+             <ul class="menu-list">
+                 <li class="menu-item">
+                     <a href="" class="menu-link">Trang chủ</i></a>
+                 </li>
+                 <li class="menu-item">
+                     <a href="" class="menu-link">Giới thiệu</a>
+                 </li>
+                 <li class="menu-item">
+                     <a href="" class="menu-link">Phòng</a>
+                 </li>
+                 <li class="menu-item news">
+                    <a href="news.html" class="menu-link">Tin tức</a>
+                  </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">Liên hệ</a>
                 </li>
-                <li><a href="https://vothanhtinh.github.io/it02/room.html" class="nav__mobile-link">Phòng</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/news.html" class="nav__mobile-link">Tin Tức </a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/news.html" class="nav__mobile-link">Liên hệ</a></li>
-                <li><a href="#" class="nav__mobile-link">Đăng Nhập</a></li>
-                <div class="nav__mobile-list-icon">
-                    <a href="#"><i class="fab fa-facebook-square"></i></a>
-                    <a href="#"><i class="fab fa-instagram-square"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-square"></i></a>
-                    <a href="#"><i class="fab fa-twitter-square"></i></a>
-                </div>
-
-            </ul>
-            <label for="nav-mobile-input" class="nav__mobile-close">
-                <i class="fas fa-times"></i>
-            </label>
-        </div>
-        <div class="img_logo">
-            <a href="#"><img src="./assets/img/logo.png" alt="logo" title="Howello"></a>
-        </div>
-        <div class="header-right">
-            <ul id="nav">
-                <li><a href="https://vothanhtinh.github.io/it02/index.html">Trang Chủ</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/introduce.html">Giới Thiệu</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/room.html">Phòng</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/news.html">Tin Tức</a></li>
-                <li><a href="https://vothanhtinh.github.io/it02/contact.html"> Liên Hệ</a></li>
-            </ul>
-            <div class="search">
-                <i class="search-header fas fa-search">
-                    <div id="input-search">
-                        <input class="timkiem" type="text" placeholder="Tìm kiếm.....">
-                        <i class="fas fa-search"></i>
+                <li class="menu-item">
+                    <a href="" class="menu-link">Đăng nhập</a>
+                </li>
+                <li class="menu-item">
+                    <div class="follows">
+                        <a href=""><i class="fab fa-facebook-square"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-pinterest"></i></a>
+                        <a href=""><i class="fab fa-invision"></i></a>
                     </div>
-                </i>
-            </div>
+                </li>
+                 <li class="menu-item">
+                    <a href="" class="menu-link icon"><i class="fas fa-search"></i></a>
+                 </li>
+                 <li class="menu-item">
+                    <div class="header-button">
+                        <a href="" class="menu-link icon"><span>Đặt phòng</span></a>
+                    </div>   
+                </li>
+             </ul>
+         </div>
+        <div class="menu-bar">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    </nav>
+</header>
 
-            <div type="button" class="btn ">
-                <a href="https://vothanhtinh.github.io/it02/room.html" class="button primary"> <span>ĐẶT PHÒNG</span> </a>
-            </div>
-        </div>
-    </div>
+<main>
     <div class="container">
-        <div class="top-divider full-width"></div>
-    </div>
-        </div>
-    </div>
-    
-    <main id="main" class>
-        <div id="content" class="blog-wrapper blog-archive page-wrapper">
-            <div class="row row-large row-divided">
-                <div class="post-sidebar large-3 col">
-                    <div id="secondary" class="widget-area" role="complementary">
-                        <aside id="search-2" class="widget widget_search">
-                            <form method="GET" class="searchform" action="/it02/index.html">
-                                <div class="flex-row relative">
-                                    <div class="flex-col flex-grow">
-                                        <input type="search" class="search-field mb-0" name="s" value id="s" placeholder="Tìm kiếm…" autocomplete="off">
-                                    </div>
-                                    <div class="flex-col">
-                                        <button type="submit" class="ux-search-submit submit-button secondary button icon mb-0">
-                                            <i class="fas fa-search"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="live-search-results text-left z-top">
-                                    <div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 300px; z-index: 9999;">
-                                    </div>
+        <div class="content">
+            <div class="content-main">
+                <div class="post-padd">
+                    <div class="post-sidebar">
+                        <div class="searchform-2">
+                            <form method="get" role="search">
+                                <div class="row-input">
+                                       <!-- input -->
+                                    <input type="search" placeholder="Tìm kiếm...">
+                                   <!-- button -->
+                                   <div class="icon-buttonsearch">
+                                   <button type="submit">
+                                       <i class="fas fa-search"></i>
+                                   </button>
+                                   </div>
                                 </div>
                             </form>
-                        </aside>
-                        <aside id="flatsome_recent_posts-4" class="widget flatsome_recent_posts">
-                            <span class="widget-title">
+                        </div>
+                        <div class="post">
+                            <span class="title-span">
                                 <span>Bài viết mới</span>
                             </span>
-                            <div class="is-divider small"></div>
+                            <div class="wrapper"></div>
                             <ul>
-                                <li class="recent-blog-posts-li">
-                                    <div class="flex-row recent-blog-posts align-top pt-half pb-half">
-                                        <div class="flex-col mr-half">
-                                            <div class="badge post-date  badge-circle">
-                                                <div class="badge-inner bg-fill"  style="background: url(./assets/img/news-img/vungtau.jpg ); border:0;"; border:0;"></div>
+                                <li class="list-post">
+                                    <div class="flex-row">
+                                        <div class="img-post">
+                                            <div class="banner">
+                                                <img src="./assets/img/news-img/vungtau.jpg" alt="">
                                             </div>
                                         </div>
-                                        <div class="flex-col flex-grow">
-                                            <a href="https://vothanhtinh.github.io/it02/vungtau.html" title="Thành phố biển Vũng Tàu">Thành phố biển Vũng Tàu</a>
-                                            <span class="post_comments op-7 block is-xsmall">
-                                                <a href="#"></a>
-                                            </span>
+                                        <div class="text-post">
+                                            <a href="vungtau.html" title="Thành phố biển Vũng Tàu">Thành phố biển Vũng Tàu</a>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="recent-blog-posts-li">
-                                    <div class="flex-row recent-blog-posts align-top pt-half pb-half">
-                                        <div class="flex-col mr-half">
-                                            <div class="badge post-date  badge-circle">
-                                                <div class="badge-inner bg-fill"  style="background: url(./assets/img/news-img/phuquoc.jpg ); border:0;"></div>
+                                <li class="list-post">
+                                    <div class="flex-row">
+                                        <div class="img-post">
+                                            <div class="banner">
+                                                <img src="./assets/img/news-img/phuquoc.jpg" alt="">
                                             </div>
                                         </div>
-                                        <div class="flex-col flex-grow">
-                                            <a href="https://vothanhtinh.github.io/it02/daophuquoc.html" title="Đảo ngọc Phú Quốc">Đảo ngọc Phú Quốc</a>
-                                            <span class="post_comments op-7 block is-xsmall">
-                                                <a href="#"></a>
-                                            </span>
+                                        <div class="text-post">
+                                            <a href="phuquoc.html" title="Đảo ngọc Phú Quốc">Đảo ngọc Phú Quốc</a>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="recent-blog-posts-li">
-                                    <div class="flex-row recent-blog-posts align-top pt-half pb-half">
-                                        <div class="flex-col mr-half">
-                                            <div class="badge post-date  badge-circle">
-                                                <div class="badge-inner bg-fill"  style="background: url(./assets/img/news-img/suoi-khoang-bang-quang-binh.jpg ); border:0;"></div>
+                                <li class="list-post">
+                                    <div class="flex-row">
+                                        <div class="img-post">
+                                            <div class="banner">
+                                                <img src="./assets/img/news-img/suoi-khoang-bang-quang-binh.jpg" alt="">
                                             </div>
                                         </div>
-                                        <div class="flex-col flex-grow">
-                                            <a href="https://vothanhtinh.github.io/it02/khudulich.html" title="Giới thiệu Khu du lịch sinh thái suối nước khoáng nóng Tiên Lãng">Giới thiệu Khu du lịch sinh thái suối nước khoáng nóng Tiên Lãng</a>
-                                            <span class="post_comments op-7 block is-xsmall">
-                                                <a href="#"></a>
-                                            </span>
+                                        <div class="text-post">
+                                            <a href="suoinuocnong.html" title="Giới thiệu Khu du lịch sinh thái suối nước khoáng nóng Tiên Lãng">Giới thiệu Khu du lịch sinh thái suối nước khoáng nóng Tiên Lãng</a>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="recent-blog-posts-li">
-                                    <div class="flex-row recent-blog-posts align-top pt-half pb-half">
-                                        <div class="flex-col mr-half">
-                                            <div class="badge post-date  badge-circle">
-                                                <div class="badge-inner bg-fill"  style="background: url(./assets/img/news-img/Con-Dao.jpg ); border:0;"></div>
+                                <li class="list-post">
+                                    <div class="flex-row">
+                                        <div class="img-post">
+                                            <div class="banner">
+                                                <img src="./assets/img/news-img/Con-Dao.jpg" alt="">
                                             </div>
                                         </div>
-                                        <div class="flex-col flex-grow">
-                                            <a href="https://vothanhtinh.github.io/it02/stay&play.html" title="Tạp chí Travel & Leisure của Mỹ ca ngợi Côn Đảo Việt Nam">Tạp chí Travel & Leisure của Mỹ ca ngợi Côn Đảo Việt Nam</a>
-                                            <span class="post_comments op-7 block is-xsmall">
-                                                <a href="#"></a>
-                                            </span>
+                                        <div class="text-post">
+                                            <a href="condao.html" title="Tạp chí Travel & Leisure của Mỹ ca ngợi Côn Đảo Việt Nam">Tạp chí Travel & Leisure của Mỹ ca ngợi Côn Đảo Việt Nam</a>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="recent-blog-posts-li">
-                                    <div class="flex-row recent-blog-posts align-top pt-half pb-half">
-                                        <div class="flex-col mr-half">
-                                            <div class="badge post-date  badge-circle">
-                                                <div class="badge-inner bg-fill"  style="background: url(./assets/img/news-img/Vinpearl.jpg ); border:0;"></div>
+                                <li class="list-post child">
+                                    <div class="flex-row">
+                                        <div class="img-post">
+                                            <div class="banner">
+                                                <img src="./assets/img/news-img/nhatrang.jpeg" alt="">
                                             </div>
                                         </div>
-                                        <div class="flex-col flex-grow">
-                                            <a href="https://vothanhtinh.github.io/it02/nhatrang.html" title="Đến Vinpearl Nha Trang, nhận ưu đãi lớn với Vincharm Spa">Đến Vinpearl Nha Trang, nhận ưu đãi lớn với Vincharm Spa</a>
-                                            <span class="post_comments op-7 block is-xsmall">
-                                                <a href="#"></a>
-                                            </span>
+                                        <div class="text-post">
+                                            <a href="nhatrang.html" title="Đến Vinpearl Nha Trang, nhận ưu đãi lớn với Vincharm Spa">Đến Vinpearl Nha Trang, nhận ưu đãi lớn với Vincharm Spa</a>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
-                        </aside>
-                    </div>
-                </div>
-                <div class="large-9 col medium-col-first">
-                        <article id="post-74" class="post-74 post type-post status-publish format-standard has-post-thumbnail hentry category-tin-tuc">
-                            <div class="article-inner has-shadow box-shadow-1 box-shadow-2-hover">
-                                <header class="entry-header">
-                                    <div class="entry-header-text entry-header-text-top text-left">
-                                        <h6 class="entry-category is-xsmall">
-                                            <a href="https://vothanhtinh.github.io/it02/news.html" rel="category tag">Tin tức</a>
-                                        </h6>
-                                        <h1 class="entry-title">Thành phố biển Vũng Tàu</h1>
-                                        <div class="entry-divider is-divider small"></div>
-                                    </div>
-                                    <div class="entry-image relative">
-                                        <a href="">
-                                            <img width="1020" height="638" src="./assets/img/vungtau.jpg" sizes="(max-width: 1020px) 100vw, 1020px">
-                                        </a>
-                                        <div class="badge absolute top post-date badge-circle">
-                                            <div class="badge-inner">
-                                                <span class="post-date-day">08</span><br>
-                                                <span class="post-date-month is-small">Th3</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </header>
-                                <div class="entry-content single-page">
-                                    <p>Những sắc màu của biển, của di tích, của lịch sử… pha trộn vào nhau tạo nên vẻ đẹp kiêu hãnh cho thành phố Biển nổi danh ở phương Nam này.</p>
-                                    <p>
-                                        Đến Vũng Tàu, du khách có thể thong thả dạo bước trên làn cát trắng mịn của bãi Trước. Dọc bãi tắm là công viên phủ một màu xanh của những rặng dừa, những hàng phi lao… tỏa bóng mát. Đi theo con đường Hạ Long – Quang Trung, du khách sẽ đến bãi Thùy Vân hay còn gọi là bãi Sau với bãi tắm đẹp kéo dài trên 3 km. Đi qua núi lớn, du khách sẽ đến bãi Dâu với nhiều vịnh nhỏ tạo nên nhiều bãi tắm kín đáo, phong cảnh nên thơ, hữu tình với biển cả mênh mông trước mặt hay vách núi cheo leo, dựng đứng sau lưng…
-
-                                    </p>
-                                    <p>Những di tích lịch sử, văn hóa của Vũng Tàu là một kho tàng vô giá dành cho du khách khám phá. Đến đây, du khách có thể tham quan tượng Chúa Ki-tô, leo lên ngọn Hải Đăng, viếng Thích Ca Phật Đài, Linh Sơn cổ tự… Ẩm thực của phố Biển cũng là điểm hấp dẫn mà du khách không thể bỏ qua, ngoài những xe hàng rong bán hải sản dọc biển, du khách có thể thưởng thức món bánh khọt đặc sản của Vũng Tàu; bánh hỏi An Nhất, lẩu cá đuối, hàu sữa nướng… cũng là những món ăn ngon của thành phố biển Vũng Tàu.</p>
-                                    <div class="essb_links essb_counter_modern_right essb_displayed_bottom essb_share essb_template_default-retina essb_1071225221 print-no" id="essb_displayed_bottom_1071225221" data-essb-postid="74" data-essb-position="bottom" data-essb-button-style="button" data-essb-template="default-retina" data-essb-counter-pos="right" data-essb-url="#" data-essb-twitter-url="#" data-essb-instance="1071225221">
-                                        <ul class="essb_links_list">
-                                            <li class="essb_item essb_link_facebook nolightbox">
-                                                <a href="#" title="">
-                                                    <i class="fab fa-facebook-square"></i>
-                                                    <span class="essb_network_name">Facebook</span>
-                                                </a>
-                                            </li>
-                                            <li class="essb_item essb_link_twitter nolightbox">
-                                                <a href="#" title="">
-                                                    <i class="fab fa-twitter-square"></i>
-                                                    <span class="essb_network_name">Twitter</span>
-                                                </a>
-                                            </li>
-                                            <li class="essb_item essb_link_instagram nolightbox">
-                                                <a href="#" title="">
-                                                    
-                                                    <span class="essb_network_name">Instagram</span>
-                                                </a>
-                                            </li>
-                                            <li class="essb_item essb_link_pinterest nolightbox">
-                                                <a href="#" title="">
-                                                    <i class="fab fa-pinterest-square"></i>
-                                                    <span class="essb_network_name">Pinterest</span>
-                                                </a>
-                                            </li>
-                                            <li class="essb_item essb_link_linkedin nolightbox">
-                                                <a href="#" title="">
-                                                    <i class="fab fa-twitter-square"></i>
-                                                    <span class="essb_network_name">LinkedIn</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <nav role="navigation" id="nav-below" class="navigation-post">
-                                    <div class="flex-row next-prev-nav bt bb">
-                                        <div class="flex-col flex-grow nav-prev text-left">
-                                            <div class="nav-previous">
-                                                <a href="#">
-                                                    <span class="hide-for-small">
-                                                        <i class="fas fa-angle-left"></i>
-                                                    </span>
-                                                    Đảo ngọc Phú Quốc
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="flex-col flex-grow nav-next text-right"></div>
-                                    </div>
-                                </nav>
-                            </div>
-                        </article>
-                        <div class="comment-respond" id="comments">
-                            <div id="respond" class="comment-respond">
-                                <h3 id="reply-title" class="comment-reply-title">
-                                    Trả lời
-                                    <small>
-                                        <a href="#" rel="nofollow" id="cancel-comment-reply-link" style="display: none;">
-                                            Hủy
-                                        </a>
-                                    </small>
-                                </h3>
-                                <form action="#" method="POST" id="commentform" class="comment-form" novalidate>
-                                    <p class="comment-notes">
-                                        <span id="email-notes">Email của bạn sẽ không được hiển thị công khai.</span>
-                                        Các trường bắt buộc được đánh dấu
-                                        <span class="required">*</span>
-                                    </p>
-                                    <p class="comment-form-comment">
-                                        <label for="comment">Bình luận</label>
-                                        <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required="required"></textarea>
-                                    </p>
-                                    <p class="comment-form-author">
-                                        <label for="author">Tên <span class="required">*</span></label>
-                                        <input id="author" name="author" type="text" value="" size="100" maxlength="500" required="required">
-                                    </p>
-                                    <p class="comment-form-email">
-                                        <label for="email">Email <span class="required">*</span></label>
-                                        <input id="email-1" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" required="required">
-                                    </p>
-                                    <p class="comment-form-url">
-                                        <label for="url">Trang web</label>
-                                        <input id="url" name="url" type="url" value="" size="30" maxlength="200">
-                                    </p>
-                                    <p class="form-submit">
-                                        <input name="submit" type="submit" id="submit" class="submit" value="Phản hồi">
-                                        <input type="hidden" name="comment_post_ID" value="74" id="comment_post_ID">
-                                        <input type="hidden" name="comment_parent" id="comment_parent" value="0">
-                                    </p>
-                                </form>
-                            </div>
                         </div>
+                    </div>
                 </div>
-        </div>
-    </main>
-</body>
-<div id="footer">
-    <div class="footer-item">
-        <div class="footer-item-list">
-            <img src="./assets/img/logo_footer.png" class="logo-footer">
-            <p>Đến với Khu nghỉ dưỡng Premier Village Mona Media, quý khách sẽ được trải nghiệm dịch vụ Spa
-                cao
-                cấp, trung tâm thể hình hiện đại và các hoạt động giải trí trên biển</p>
-            <div class="icon-logo-footer">
-                <i class="fab fa-facebook-f" title="facebook"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-twitter"></i>
-            </div>
-        </div>
-        <div class="footer-item-list">
-            <div id="contact">
-                <div id="contact-child">
-                    <h5>liên hệ</h5>
-                    <div class="hollow"></div>
-                    <div id="address">
-                        <i class="fas fa-map-marker-alt"></i>
-
-                        <p>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
-
-                    </div>
-                    <div class="contact-child-items">
-                        <i class="fas fa-tty"></i>
-                        <a href="tel:0769220162">076 922 0162</a>
-                    </div>
-                    <div id="email">
-                        <i class="fas fa-envelope"></i>
-                        <p>
-                            <a href="mailto:demonhunterg@gmail.com">demonhunterg@gmail.com</a>
-                            <br>
-                            <a href="mailto:mon@mona.media">mon@mona.media</a>
-                        </p>
-                    </div>
-                    <div class="contact-child-items">
-                        <i class="fab fa-skype"></i>
+              <!-- Grid Post -->
+              <div class="grid-container">
+                <div class="grid-item">
+                    <div class="type text-left border has-hover">
+                            <div class="tilte-grid">
+                                <h6>
+                                    <a href="news.html">Tin tức</a>
+                                </h6>
+                                <h1>
+                                    Thành phố biển Vũng Tàu
+                                </h1>
+                            <div class="entry-divider"></div>
+                        </div>
                         <div>
-                            <a href="skype:demonhunterp?chat">demonhunterp</a>
+                            <a href="vungtau.html"><img src="./assets/img/vungtau.jpg" alt=""></a>
                         </div>
-                    </div>
+                        <div class="box-text">
+                            <p>Những sắc màu của biển, của di tích, của lịch sử… pha trộn vào nhau tạo nên vẻ đẹp kiêu hãnh cho thành phố Biển nổi danh ở phương Nam này.
+                                Đến Vũng Tàu, du khách có thể thong thả dạo bước trên làn cát trắng mịn của bãi Trước. Dọc bãi tắm là công viên phủ một màu xanh của những rặng dừa, những hàng phi lao… tỏa bóng mát. Đi theo con đường Hạ Long – Quang Trung, du khách sẽ đến bãi Thùy Vân hay còn gọi là bãi Sau với bãi tắm đẹp kéo dài trên 3 km. Đi qua núi lớn, du khách sẽ đến bãi Dâu với nhiều vịnh nhỏ tạo nên nhiều bãi tắm kín đáo, phong cảnh nên thơ, hữu tình với biển cả mênh mông trước mặt hay vách núi cheo leo, dựng đứng sau lưng…
+                                Những di tích lịch sử, văn hóa của Vũng Tàu là một kho tàng vô giá dành cho du khách khám phá. Đến đây, du khách có thể tham quan tượng Chúa Ki-tô, leo lên ngọn Hải Đăng, viếng Thích Ca Phật Đài, Linh Sơn cổ tự… Ẩm thực của phố Biển cũng là điểm hấp dẫn mà du khách không thể bỏ qua, ngoài những xe hàng rong bán hải sản dọc biển, du khách có thể thưởng thức món bánh khọt đặc sản của Vũng Tàu; bánh hỏi An Nhất, lẩu cá đuối, hàu sữa nướng… cũng là những món ăn ngon của thành phố biển Vũng Tàu.</p>
+                        </div>
+                </div>
                 </div>
             </div>
+</main>
 
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted">
+    <!-- Section: Social media -->
+    <section
+      class="d-flex justify-content-center justify-content-lg-between p-4"
+    >
+    </section>
+    <!-- Section: Social media -->
+    <!-- Section: Links  -->
+    <section class="">
+      <div class="container text-md-start mt-5">
+        <!-- Grid row -->
+        <div class="row mt-3">
+          <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4 gpadd">
+            <!-- Content -->
+            <img src="./assets/img/logo_footer.png">
+            <p>Đến với Khu nghỉ dưỡng Premier Village Mona Media, quý khách sẽ được trải nghiệm dịch vụ Spa cao cấp, trung tâm thể hình hiện đại và các hoạt động giải trí trên biển</p>
+            <div class="followser">
+                <a href=""><i class="fab fa-facebook-square" aria-hidden="true"></i></a>
+                <a href=""><i class="fab fa-instagram-square" aria-hidden="true"></i></a>
+                <a href=""><i class="fab fa-twitter-square" aria-hidden="true"></i></a>
+            </div>    
         </div>
-        <div class="footer-item-list">
-            <div id="link">
-                <div id="link-child">
-                    <h5>liên kết</h5>
-                    <div class="hollow"></div>
-                    <ul>
-                        <li><a href="https://vothanhtinh.github.io/it02/index.html">Trang chủ</a> </li>
-                        <li><a href="https://vothanhtinh.github.io/it02/introduce.html">Giới Thiệu</a></li>
-                        <li><a href="https://vothanhtinh.github.io/it02/room.html">Phòng</a></li>
-                        <li><a href="https://vothanhtinh.github.io/it02/news.html">Tin Tức</a></li>
-                        <li><a href="https://vothanhtinh.github.io/it02/contact.html"> Liên Hệ</a></li>
-                    </ul>
-                    <div type="button" class="btn ">
-                        <a href="https://vothanhtinh.github.io/it02/room.html" class="button primary"> <span>ĐẶT PHÒNG</span> </a>
-                    </div>
-                </div>
+          <!-- Grid column -->
+          <!-- Grid column -->
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 gpadd">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Liên hệ
+                </h6>
+                <div class="clearfix"></div>
+                <p><i class="fas fa-map-marker-alt"></i>319 C16 Lý Thường Kiệt, Phường 15, Quận 11, Tp.HCM</p>
+                <p>
+                    <i class="fas fa-phone me-3"></i>
+                    <a href="tel:076 922 0162">076 922 0162</a>
+                </p>
+                <p>
+                    <i class="fas fa-envelope-open"></i>
+                    <a href="mailto: demonhunterg@gmail.com">demonhunterg@gmail.com</a>
+                </p>
+                <p>
+                    <i class="fab fa-skype"></i>
+                    <a href="">demonhunterp</a>
+                </p>
+              </div>
+          <!-- Grid column -->
+  
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4 gpadd menu-footer">
+            <!-- Links -->
+            <h6 class="text-uppercase fw-bold mb-4">
+              Liên kết
+            </h6>
+            <div class="clearfix"></div>
+            <ul class="menu2">
+            <li>
+              <a href="#!" class="text-reset">Trang chủ</a>
+            </li>
+            <li>
+              <a href="#!" class="text-reset">Cửa hàng</a>
+            </li>
+            <li>
+              <a href="#!" class="text-reset">Liên hệ</a>
+            </li>
+            <li>
+              <a href="#!" class="text-reset">Giới thiệu</a>
+            </li>
+            <li class="light-2">
+              <a href="news.html" class="text-reset inews">Tin tức</a>
+            </li>
+            </ul>
+            <div class="header-button">
+                <a href="" class="menu-link icon"><span>Đặt phòng</span></a>
             </div>
+          </div>
+          <!-- Grid column -->
         </div>
-        <div class="footer-item-list">
-            <div class="img">
-                <div class="img-child">
-                    <h5>hình ảnh</h5>
-                    <div class="hollow"></div>
-                    <div class="img-footer">
-                        <div class="img-footer-child">
-                            <a href="#"> <img src="./assets/img/footer-1.jpg"></a>
-                            <a href="#"><img src="./assets/img/footer-2.jpg"></a>
-                            <a href="#"><img src="./assets/img/footer-3.jpg"></a>
-                        </div>
-                        <div class="img-footer-child">
-                            <a href="#"><img src="./assets/img/footer-4.jpg"></a>
-                            <a href="#"><img src="./assets/img/footer-5.jpg"></a>
-                            <a href="#"><img src="./assets/img/footer-6.jpg"></a>
-                        </div>
-                    </div>
-
-                </div>
-
-            </div>
-        </div>
+        <!-- Grid row -->
+      </div>
+    </section>
+    <!-- Section: Links  -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: #000;">
+        © Bản quyền thuộc về. Thiết kế website 
+        <img src="img/logo2.png" style="width: 20px; vertical-align: sub;" alt="">
+    <a class="text-layer fw-bold" href="">
+          <strong>Mona Media</strong>
+    </a>
     </div>
-    <div class="banquyen">
-        <div class="banquyen-child">
-            <i class="fa fa-copyright" aria-hidden="true"></i> Bản quyền thuộc về . Thiết kế website
-            <img src="http://mona-media.com/logo.png" alt="MonaMedia">
-            <a href=" #" title="Mona Media"><strong>Mona Media</strong></a>
-        </div>
-    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 
-</div>
+   <!-- Jvs -->
+   <script src="./assets/js/main.js" defer></script>
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+</body>
 </html>
